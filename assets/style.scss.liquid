@@ -2065,7 +2065,9 @@ $colorSchemeDarkText
 .homepage-sections-wrapper--light, .sections-wrapper--light{
 	background: $colorSchemeLightBackground;
   color: $colorSchemeLightText;
-  a{color: $colorSchemeLightText;}
+      margin: 35px 0px !important;
+  a{color: $colorSchemeLightText;
+  }
   .blog-title--divider{
     background-color: $colorSchemeLightText;
   }
@@ -4582,8 +4584,8 @@ ul.sm-icons{
 }
 
 .homepage-headline-text{
-  font-size: $headline;
-  margin-top: 20px;
+  font-size: 30px !important;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -5474,6 +5476,8 @@ article.page{
 /* @group Product Detail */
 h1.product-description-header{
 	font-size: {{ settings.product-page-font-size }}px;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 #product_images .product-main-image{
@@ -5735,8 +5739,8 @@ text-align: center;
 
 /* Turns the Add to Cart button into a secondary CTA when the smart payment buttons are enabled */
 button#purchase.add-to-cart--secondary {
-	background: {{ settings.add-to-cart-text-color }};
-	color: {{ settings.add-to-cart-background-color }};
+	background: #2a4820 !important;
+	color: #ffffff;
 	border: 1px solid {{ settings.add-to-cart-background-color }};
 	transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 	outline: none; // get rid of dotted outline (Firefox and IE)
@@ -5791,7 +5795,7 @@ input#purchase:hover,
 .quantity-selector{
 	width: 100%;
 	color: $input-text-color;
-	font-size: 12px;
+	font-size: 18px;
 	padding: 13px 10px;
 	border: 1px solid $input-border-color;
   height: 43px;
@@ -6070,7 +6074,7 @@ ul#product-thumbnails li{
 }
 
 .product-description-wrapper{
-	margin: 30px 0;
+	margin: 25px 0;
 	clear:both;
 }
 
@@ -8116,10 +8120,15 @@ select:disabled {
 
 button#purchase.add-to-cart--secondary {
   text-transform: uppercase;
+  background: #2a4820 !important;
+  font-size: 17px;
 }
 
 .shopify-payment-button .shopify-payment-button__button--unbranded {
   text-transform: uppercase !Important;
+  font-size: 17px !important;
+  background: #2a4820 !important;
+  font-weight: 700 !important;
 }
 
 .slider-caption h4.size-50 {
@@ -8157,9 +8166,10 @@ button#purchase.add-to-cart--secondary {
 }
 
 .product-read-more {
-  font-size: 25px;
-  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-family: Josefin Sans, sans-serif;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .product-page--pricing {
@@ -8189,7 +8199,7 @@ button#purchase.add-to-cart--secondary {
 }
 
 .button-container button, .button-container div button {
-  padding: 25px !important;
+  padding: 20px !important;
   margin-top: 0px !important;
   line-height: 1 !important;
   border: 0px solid transparent !important;
@@ -8204,7 +8214,8 @@ button#purchase.add-to-cart--secondary {
 
 .shipping-text h4 {
   font-style: italic;
-  font-size: 16px;
+    font-size: 18px;
+    font-weight: 300 !important;
 }
 
 .quantity-controls {
@@ -8227,6 +8238,15 @@ button#purchase.add-to-cart--secondary {
 
 .product-subheading {
   text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+      margin-top: 2px;
+}
+
+.homepage-sections-wrapper--light .btn-custom {
+    color: #ffffff;
+    background: #2a4820;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
