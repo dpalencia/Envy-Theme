@@ -47,6 +47,8 @@
 
       <span class="indiv-product-title-text">{{ liquidObject.title }}</span>
 
+      <span class="indiv-product-subheading">{{ liquidObject.metafields.custom_fields["subheading"] }}</span>
+
       <span class="money-styling">
 
         {% if liquidObject.compare_at_price_max > liquidObject.price %}
@@ -71,8 +73,14 @@
       {% endif %}
 
     </a>
-  </div>
+  </div>  
+  <form method="post" action="/cart/add">
+    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+    <input class="recent-offers-cartbtn" type="submit" value="Add to cart" class="btn" />
+  </form> 
 </div>
+
+
 
 {% if liquidObject.available %}
   {% if liquidObject.compare_at_price_max > liquidObject.price and settings.sale_badge %}

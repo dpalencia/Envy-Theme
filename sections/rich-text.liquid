@@ -9,16 +9,43 @@
     <div class="homepage-sections-wrapper homepage-sections-wrapper--dark">
 {% endcase %}
 
-  <div class="container">
-    <div class="row">
+  <div class="container rich-text">
+    <div class="row {% if section.settings.align == "left" or section.settings.align == "right" %}rich-flex{% endif %}">
 
       {% if section.settings.title != blank %}
-      <div class="col-md-12">
-        <div class="title-bar {{ settings.title-bar-styling }} custom-font">
-          <h2><span>{{ section.settings.title | escape }}</span></h2>
-          <div class="clear"></div>
-        </div>
-      </div>
+      {% case section.settings.align %}
+            {% when "left" %}
+                <div class="col-md-5 text-left">
+                    <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+                    <h2><span>{{ section.settings.title | escape }}</span></h2>
+                    <h4 class="rich-subheading">{{ section.settings.subheading }}</h4>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col-md-7 text-right">
+                    <img src="{{'recent-offers-border.png' | asset_url}}" />
+                </div>
+            {% when "right" %}
+                <div class="col-md-7 text-left">
+                    <img src="{{'join-the-club-border.png' | asset_url}}" />
+                </div>
+                <div class="col-md-5 text-right">
+                    <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+                    <h2><span>{{ section.settings.title | escape }}</span></h2>
+                    <h4 class="rich-subheading">{{ section.settings.subheading }}</h4>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+            {% when "center" %}
+                <div class="col-md-12">
+                    <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+                    <h2><span>{{ section.settings.title | escape }}</span></h2>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+      {% endcase %}
+
+
       {% endif %}
 
       <div class="homepage-indiv-section-wrapper grid--full homepage-featured-content-wrapper wow fadeIn">
@@ -63,6 +90,23 @@
     },
     "class": "homepage-section--rich-text-wrapper",
     "settings": [
+        { 
+            "type": "html",
+            "label": "Sub Heading",
+            "id": "subheading"
+        },
+        {
+            "type": "radio",
+            "id": "align",
+            "label": "Align",
+            "options": [
+                {"value": "left", "label" : "Left text with image"},
+                {"value":  "right", "label" : "Right text with image"},
+                {"value": "center", "label" : "Center with no image"}
+            ],
+            "default" : "center",
+            "info": "Alignment"
+        },
         {
             "type": "select",
             "id": "colors",

@@ -1,0 +1,230 @@
+.slider-caption {
+    padding: 24px 0px 15px;
+}
+
+.flex-direction-nav a {
+    bottom: -24px;
+}
+
+.footer-block--wrapper {
+    text-align: left;
+}
+  
+.bottom-footer {
+    padding: 10px 0 10px 0;
+    font-size: 12px;
+    margin-top: 20px;
+    border-top: 1px solid #dadada;
+}
+
+#newsletter_text {
+    border: 1px solid #dadada;
+    padding: 13px;
+}
+
+.notification-bar p {
+    font-weight: 200;
+}
+
+.slider-caption.horizontal-align--center {
+    font-weight: 200;
+}
+
+.title-bar h2 {
+    font-size: 50px !important;
+    letter-spacing: 0px;
+}
+
+.homepage-headline-text {
+    font-size: 40px;
+    font-weight: 300 !important;
+    text-transform: uppercase !Important;
+}
+
+.btn-custom {
+  text-transform: uppercase;
+}
+
+button#purchase.add-to-cart--secondary {
+  text-transform: uppercase;
+  background: #2a4820 !important;
+  font-size: 17px;
+}
+
+.shopify-payment-button .shopify-payment-button__button--unbranded {
+  text-transform: uppercase !Important;
+  font-size: 17px !important;
+  background: #2a4820 !important;
+  font-weight: 700 !important;
+}
+
+.slider-caption h4.size-50 {
+    text-transform: uppercase;
+}
+  
+.homepage-subheading--1 {
+    text-transform: uppercase;
+}
+
+.title-bar {
+    margin-bottom: 5px;
+}
+
+.title-bar h2::after {
+  display: none;
+}
+
+.featured-row__subtext p {
+    font-size: 20px;
+}
+
+.homepage-section--text-over-image-wrapper .rte {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.newsletter_title .rte {
+    padding: 0px 0px 0px 0;
+}
+
+.entry-content.product-description-main-wrapper.wow.fadeInUp {
+    background-color: #f5f6f8;
+    padding: 40px;
+}
+
+.product-read-more {
+  font-size: 20px;
+  font-family: Josefin Sans, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-page--pricing {
+  margin-bottom: 0px;
+}
+
+.row.homepage-sections--indiv-product-slider-variants {
+  margin-top: 10px;
+}
+
+#price-field {
+  font-size: 35px;
+}
+
+.selector-wrapper label {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-container button, .button-container div {
+  flex-basis: 180px;
+  margin-right: 20px;
+}
+
+.button-container button, .button-container div button {
+  padding: 20px !important;
+  margin-top: 0px !important;
+  line-height: 1 !important;
+  border: 0px solid transparent !important;
+  background-color: #487338 !important;
+  color: #fff !important;
+}
+
+.button-container button {
+  margin-bottom: 20px;
+}
+
+
+.shipping-text h4 {
+  font-style: italic;
+    font-size: 18px;
+    font-weight: 300 !important;
+}
+
+.quantity-controls {
+  font-weight: bold;
+  
+}
+
+#Quantity {
+  width: 50px;
+}
+
+.button-container div {
+  flex-basis: 180px !important;
+  max-width: 180px !important;
+}
+
+.button-container div div {
+  width: 100%;
+}
+
+.product-subheading {
+  text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+      margin-top: 2px;
+}
+
+.homepage-sections-wrapper--light .btn-custom {
+    color: #ffffff;
+    background: #2a4820;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/* Rich Text (Heading/Image secitons) */
+
+.rich-text .text-left .title-bar {
+  text-align: left;
+}
+
+.rich-text .text-right .title-bar {
+  text-align: right;
+}
+
+.rich-text .text-left .title-bar h2, .rich-text .text-right .title-bar h2 {
+  padding: 0;
+}
+
+.rich-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Featured Section */
+.indiv-product-title-text {
+  display: block;
+}
+
+.indiv-product, .money-styling {
+  text-align: left;
+  font-family: "Josefin Sans",sans-serif;
+  text-transform: uppercase;
+   letter-spacing: .2px;
+}
+
+.indiv-product-title-text, .money-styling {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.indiv-product-subheading {
+  margin: 5px 0;
+  color: #000;
+  display: block;
+}
+
+.recent-offers-cartbtn {
+  border: unset;
+  font-family: "Josefin Sans",sans-serif;
+  padding: 15px 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  background: #2a4820 !important;
+  color: #fff;
+}

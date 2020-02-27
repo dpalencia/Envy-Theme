@@ -110,7 +110,7 @@
         {% endif %}
         
        	  <div class="product-read-more">
-            <a href="{{product.link}}">Read More ></a>  
+            <a href="{{product.url}}">Read More ></a>  
           </div>
         {% unless product.empty? %}
 
@@ -250,10 +250,6 @@
                     <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}" data-cart-action="{{ section.settings.cart-action }}">
                         {{ 'products.product.add_to_cart' | t }}
                     </button>
-
-                    {% if section.settings.show_smart_checkout %}
-                      {{ form | payment_button }}
-                    {% endif %}
 
                   </div>
 
