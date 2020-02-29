@@ -2,7 +2,7 @@
   "current": {
     "font-color": "#000000",
     "link-color": "#487338",
-    "active-link-color": "#242424",
+    "active-link-color": "#487338",
     "header-background-color": "#ffffff",
     "header-text-color": "#000000",
     "header-overlay-text-color": "#ffffff",
@@ -22,8 +22,8 @@
     "logo_color": "#252525",
     "logo_hover_color": "#242424",
     "logo_overlay_color": "#fff",
-    "add-to-cart-background-color": "#487338",
-    "add-to-cart-background-hover-color": "#2a4820",
+    "add-to-cart-background-color": "#2a4820",
+    "add-to-cart-background-hover-color": "#000000",
     "add-to-cart-text-color": "#ffffff",
     "pop-up-text-background-color": "#fff",
     "pop-up-text-header-text-color": "#242424",
@@ -36,19 +36,19 @@
     "color_image_overlay_text": "#fff",
     "color_image_overlay": "#242424",
     "image_overlay_opacity": 50,
-    "sale-label-color": "#2a4820",
-    "sale_badge": true,
+    "sale-label-color": "#487338",
+    "sale_badge": false,
     "sold-out-badge-color": "#242424",
-    "sold_out_badge": false,
-    "type_header_font": "poppins_n8",
+    "sold_out_badge": true,
+    "type_header_font": "josefin_sans_n7",
     "title-bar-styling": "title-bar-lowercase",
     "heading-case": "uppercase",
     "typography-headings-font-size": 26,
-    "type_base_font": "garamond_n4",
+    "type_base_font": "itc_caslon_no_224_n5",
     "typography-body-font-size": 16,
-    "type_announcement_bar_font": "garamond_n4",
+    "type_announcement_bar_font": "itc_caslon_no_224_n5",
     "typography-announcement-bar-font-size": 16,
-    "type_navigation_font": "poppins_n8",
+    "type_navigation_font": "josefin_sans_n6",
     "typography-menu-font-size": 16,
     "menu-case": "menu-upper-case",
     "product-page-font-size": 30,
@@ -58,17 +58,17 @@
     "pop-up-text-header-text-size": 20,
     "pop-up-text-description-text-size": 16,
     "cart-type": "page",
-    "enable-additional-checkout-buttons": true,
+    "enable-additional-checkout-buttons": false,
     "allow_note": true,
     "enable_terms_conditions": false,
     "terms_conditions_link": "",
     "product-grid--show-vendor": false,
     "hover-effect": "zoom",
-    "match-height": true,
+    "match-height": false,
     "show_reviews": false,
-    "sm_facebook_link": "",
-    "sm_twitter_link": "",
-    "sm_instagram_link": "",
+    "sm_facebook_link": "#",
+    "sm_twitter_link": "#",
+    "sm_instagram_link": "#",
     "sm_youtube_link": "",
     "sm_vimeo_link": "",
     "sm_flickr_link": "",
@@ -91,13 +91,13 @@
     "currency_format": "money_format",
     "supported_currencies": "USD",
     "default_currency": "USD",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/fav.jpg",
     "enable-product-results": false,
     "enable-article-results": false,
     "enable-page-results": false,
     "animations_enabled": true,
     "checkout_header_image": "",
-    "checkout_logo_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-rough.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
@@ -107,9 +107,9 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#197bbd",
-    "checkout_button_color": "#197bbd",
-    "checkout_error_color": "#e32c2b",
+    "checkout_accent_color": "#2a4820",
+    "checkout_button_color": "#2a4820",
+    "checkout_error_color": "#be2120",
     "header_font_style": "normal",
     "sections": {
       "announcement-bar": {
@@ -130,7 +130,7 @@
           "overlay_header": false,
           "logo": "shopify:\/\/shop_images\/logo-rough.png",
           "overlay_logo": "",
-          "logo_max_width": 240,
+          "logo_max_width": 230,
           "logo_padding": 0,
           "logo-placement": "within-header",
           "social-enable": false,
@@ -154,7 +154,7 @@
               "image": "shopify:\/\/shop_images\/green-top-bar.jpg",
               "mobile_image": "",
               "title": "",
-              "text": "<p>Expertly curated wines, naturally-made and impeccably sourced.<\/p>",
+              "text": "<p>EXPERTLY CURATED WINES, OFFERED DAILY<\/p>",
               "button_text": "",
               "link": "#",
               "caption-background": "rgba(0,0,0,0)",
@@ -171,7 +171,7 @@
               "image": "shopify:\/\/shop_images\/green-top-bar.jpg",
               "mobile_image": "",
               "title": "",
-              "text": "<p>20% Off Your First Purchase. Use Code PROLOGUE20<\/p>",
+              "text": "<p>20% OFF YOUR FIRST DAILY OFFER. USE CODE PROLOGUE20<\/p>",
               "button_text": "",
               "link": "",
               "caption-background": "rgba(0,0,0,0)",
@@ -205,7 +205,7 @@
         "settings": {
           "colors": "white",
           "title": "",
-          "collection": "",
+          "collection": "frontpage",
           "grid": 3,
           "rows": 1,
           "show_view_all": false
@@ -221,7 +221,8 @@
           "title": "Image with text",
           "text_block": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
           "button_label": "",
-          "button_link": ""
+          "button_link": "",
+          "newTab": false
         }
       },
       "text-over-image": {
@@ -232,7 +233,7 @@
           "text": "<p>A curated selection of rare and limited bottlings with impeccable provenance.<\/p>",
           "parallax": true,
           "alignment": "center",
-          "hero_size": "medium",
+          "hero_size": "large",
           "text-over-image-width": "full-width",
           "button_label": "Shop The Collection",
           "button_link": "shopify:\/\/collections\/the-atavique-collection"
@@ -257,41 +258,42 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1581535514916": {
+          "1582736115529": {
+            "type": "menu",
+            "settings": {
+              "menu_title": "Support",
+              "footer_linklist": "footer"
+            }
+          },
+          "1582742279442": {
+            "type": "text",
+            "settings": {
+              "title": "Contact",
+              "richtext": "<p><a href=\"mailto:hello@prologuewine.com\" title=\"mailto:hello@prologuewine.com\">hello@prologuewine.com<\/a><\/p>\n<p><a href=\"tel:+14159447272\" title=\"tel:+14159447272\">1-415-944-7272<\/a><\/p>\n<p>M-F 9-5PM (PST)<\/p>"
+            }
+          },
+          "1582934382334": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/logo-rough.png",
-              "image_max_width": 90,
-              "link": "",
+              "image": "shopify:\/\/shop_images\/Prologue_Logo_Small_Black.png",
+              "image_max_width": 80,
+              "link": "https:\/\/prologuewine.com\/",
               "title": ""
             }
           },
-          "1581535484130": {
+          "1582934496854": {
             "type": "text",
             "settings": {
-              "title": "Text Section",
-              "richtext": "<p>Share store details, promotions, or brand content with your customers.&nbsp;Share store details, promotions, or brand content with your customers.<\/p>"
-            }
-          },
-          "1581535493747": {
-            "type": "menu",
-            "settings": {
-              "menu_title": "Menu",
-              "footer_linklist": "main-menu"
-            }
-          },
-          "1581535499121": {
-            "type": "newsletter",
-            "settings": {
-              "footer_newsletter_description": "<p>Description about newsletter sign up goes here<\/p>"
+              "title": "About",
+              "richtext": "<p>Organic &amp; natural wines, offered daily. Exclusive deals on the finest collectible and rare wine.<\/p>"
             }
           }
         },
         "block_order": [
-          "1581535514916",
-          "1581535484130",
-          "1581535493747",
-          "1581535499121"
+          "1582934382334",
+          "1582934496854",
+          "1582736115529",
+          "1582742279442"
         ],
         "settings": {
           "show_methods_of_payment": false
@@ -327,17 +329,6 @@
           "show_reviews": false
         }
       },
-      "1581535801796": {
-        "type": "rich-text",
-        "settings": {
-          "colors": "white",
-          "width": "full-width",
-          "title": "Join The Club",
-          "text": "<p>Choose your flavor for 6 curated bottles. Delivered monthly, always ships free.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
       "product-template": {
         "type": "product-template",
         "settings": {
@@ -366,14 +357,26 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "show_product_recommendations": true,
+          "show_product_recommendations": false,
           "product_recommendations_heading": "You may also like"
         }
       },
       "collection-template": {
         "type": "collection-template",
+        "blocks": {
+          "1582845131736": {
+            "type": "image",
+            "settings": {
+              "collection-sidebar-image": "",
+              "collection-sidebar-link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1582845131736"
+        ],
         "settings": {
-          "grid": 5,
+          "grid": 3,
           "rows": 3,
           "collection_image_enable": true,
           "sort_enable": false,
@@ -404,6 +407,8 @@
       "1582153952298": {
         "type": "rich-text",
         "settings": {
+          "subheading": "",
+          "align": "center",
           "colors": "white",
           "width": "large",
           "title": "Today's Offer",
@@ -511,7 +516,7 @@
         "settings": {
           "slider-animation": "slide",
           "slider-width": "full-width",
-          "slider-slide-time": 4,
+          "slider-slide-time": 6,
           "caption-heading-size": 50,
           "caption-subheading-size": 24,
           "show-slide-full-screen": false,
@@ -521,34 +526,17 @@
           "overlay": true
         }
       },
-      "1582157844965": {
-        "type": "newsletter",
-        "settings": {
-          "colors": "accent",
-          "newsletter_heading": "Join Mailing List",
-          "newsletter_description": ""
-        }
-      },
       "1582315063813": {
         "type": "rich-text",
         "settings": {
+          "subheading": "",
+          "align": "center",
           "colors": "light",
           "width": "full-width",
           "title": "Custom Orders",
           "text": "<p>Get in touch for curated, custom clubs or special events for your office<\/p>",
           "button_label": "Contact Us",
-          "button_link": "#"
-        }
-      },
-      "1582315162456": {
-        "type": "rich-text",
-        "settings": {
-          "colors": "white",
-          "width": "full-width",
-          "title": "Recent Offers",
-          "text": "<p>These recent offers are still in stock, but going fast!<\/p>",
-          "button_label": "",
-          "button_link": ""
+          "button_link": "shopify:\/\/pages\/contact"
         }
       },
       "1582315349166": {
@@ -556,17 +544,20 @@
         "settings": {
           "colors": "white",
           "image-width": "extra-large",
-          "image": "shopify:\/\/shop_images\/Morchella-Image.png",
+          "image": "shopify:\/\/shop_images\/Morchella-Image_8402b6f2-e7ea-46df-9e2c-6589a0d687e1.png",
           "layout": "right",
           "title": "",
           "text_block": "<p><strong>Coming Soon!<\/strong><\/p>\n<p><\/p>\n<p>Prologue is the exclusive place to get the same wild ingredients that acclaimed chefs are using in the country's top restaurants.<\/p>\n<p><\/p>\n<p><strong>Launching soon. Join the email list for updates.<\/strong><\/p>",
           "button_label": "Join Now",
-          "button_link": "#"
+          "button_link": "http:\/\/eepurl.com\/gS3UkL",
+          "newTab": true
         }
       },
       "1582315469946": {
         "type": "rich-text",
         "settings": {
+          "subheading": "",
+          "align": "center",
           "colors": "white",
           "width": "full-width",
           "title": "Morchella Wild Foods",
@@ -574,21 +565,134 @@
           "button_label": "",
           "button_link": ""
         }
+      },
+      "1582741885604": {
+        "type": "custom-html",
+        "disabled": true,
+        "blocks": {
+          "1582741893355": {
+            "type": "html",
+            "settings": {
+              "code": "<div style=\"text-align:center; padding: 50px 0px 0px;\"><h1>JOIN MAILING LIST<\/h1><\/div>\n<link href=\"\/\/cdn-images.mailchimp.com\/embedcode\/classic-10_7.css\" rel=\"stylesheet\" type=\"text\/css\">\n<style type=\"text\/css\">\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. *\/\n<\/style>\n<div id=\"mc_embed_signup\">\n<form action=\"https:\/\/prologuewine.us4.list-manage.com\/subscribe\/post?u=145c4c65fc941762d69a5b7da&amp;id=5ee6c230d4\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate=\"\">\n    <div id=\"mc_embed_signup_scroll\">\n\t\n<div class=\"indicates-required\">\n<span class=\"asterisk\">*<\/span> indicates required<\/div>\n<div class=\"mc-field-group\">\n\t<label for=\"mce-EMAIL\">Email Address  <span class=\"asterisk\">*<\/span>\n<\/label>\n\t<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\n<\/div>\n\t<div id=\"mce-responses\" class=\"clear\">\n\t\t<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"><\/div>\n\t\t<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"><\/div>\n\t<\/div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_145c4c65fc941762d69a5b7da_5ee6c230d4\" tabindex=\"-1\" value=\"\"><\/div>\n    <div class=\"clear\"><input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"><\/div>\n    <\/div>\n<\/form>\n<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1582741893355"
+        ],
+        "settings": {}
+      },
+      "1582757967187": {
+        "type": "rich-text",
+        "settings": {
+          "subheading": "These recent offers are still in stock, but going fast!",
+          "align": "left",
+          "colors": "white",
+          "width": "medium",
+          "title": "Recent Offers",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1582758361284": {
+        "type": "rich-text",
+        "settings": {
+          "subheading": "Choose your flavor for 6 curated bottles. <br> Delivered monthly, always ships free.",
+          "align": "right",
+          "colors": "white",
+          "width": "medium",
+          "title": "Join The Club",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1582844401379": {
+        "type": "custom-html",
+        "blocks": {
+          "1582844401379-0": {
+            "type": "html",
+            "settings": {
+              "code": "<br><br>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1582844401379-0"
+        ],
+        "settings": {}
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog-posts-per-page": 5,
+          "show_author_name": false,
+          "show_dates": true,
+          "blog-sidebar-image": "",
+          "blog-sidebar-link": "",
+          "blog_sidebar_title": "",
+          "blog_sidebar_desc": "",
+          "show_blog_tags": true,
+          "show_recent_posts": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_author_name": false,
+          "show_dates": true,
+          "social_sharing_facebook": true,
+          "social_sharing_twitter": true,
+          "social_sharing_pinterest": true,
+          "blog-sidebar-image": "",
+          "blog-sidebar-link": "",
+          "blog_sidebar_title": "",
+          "blog_sidebar_desc": "",
+          "show_blog_tags": true,
+          "show_recent_posts": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "enable_continue_shopping": false
+        }
+      },
+      "1582931492957": {
+        "type": "custom-html",
+        "blocks": {
+          "1582931492957-0": {
+            "type": "html",
+            "settings": {
+              "code": "<br>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1582931492957-0"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
       "slideshow",
       "1582153952298",
       "1581535720206",
-      "1582315162456",
+      "1582931492957",
+      "1582757967187",
       "collection",
-      "1581535801796",
+      "1582758361284",
       "1582154204260",
       "1582315063813",
       "text-over-image",
+      "1582844401379",
       "1582315469946",
       "1582315349166",
-      "1582157844965"
+      "1582741885604"
     ]
   },
   "presets": {

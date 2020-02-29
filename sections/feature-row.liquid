@@ -52,9 +52,17 @@
                       <div class="rte featured-row__subtext textarea">{{ section.settings.text_block }}</div>
                     {% endif %}
                     {% if section.settings.button_label != blank and section.settings.button_link != blank %}
-                      <a href="{{ section.settings.button_link }}" class="btn btn-custom">
-                        {{ section.settings.button_label }}
-                      </a>
+                        {% if section.settings.newTab == true %}
+                            <a target="_blank" href="{{ section.settings.button_link }}" class="btn btn-custom">
+                                {{ section.settings.button_label }}
+                            </a>
+                        {% else %}
+                            <a href="{{ section.settings.button_link }}" class="btn btn-custom">
+                                {{ section.settings.button_label }}
+                            </a>
+                        {% endif %}
+
+                    
                     {% endif %}
                   </div>
                 </div>
@@ -319,6 +327,12 @@
                 "fr": "Requis pour afficher le bouton",
                 "pt-PT": "Necessário para exibir o botão"
             }
+        },
+        {
+            "type": "checkbox",
+            "id": "newTab",
+            "label": "Open in new tab",
+            "default": false
         }
     ],
     "presets": [
