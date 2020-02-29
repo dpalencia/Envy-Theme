@@ -43,7 +43,13 @@
 	{% if collection.description != empty %}
 		<div class="description-content">{{ collection.description }}</div>
 	{% endif %}
+
+    <div class="underneath-description-container">
+        <img class="collection-underneath-image" src="{{'collection-divider.png' | asset_url}}" />
+    </div>
 </div>
+
+
 
 {% if section.settings.tags_enable or section.settings.sort_enable %}
 			<div class="filters-toolbar row">
