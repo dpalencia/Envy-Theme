@@ -1,0 +1,80 @@
+{% case block.settings.colors %}
+  {% when 'white' %}
+    <div class="homepage-sections-wrapper homepage-sections-wrapper--white">
+  {% when 'light' %}
+    <div class="homepage-sections-wrapper homepage-sections-wrapper--light">
+  {% when 'accent' %}
+    <div class="homepage-sections-wrapper homepage-sections-wrapper--accent">
+  {% when 'dark' %}
+    <div class="homepage-sections-wrapper homepage-sections-wrapper--dark">
+{% endcase %}
+
+  <div class="container rich-text">
+    <div class="row {% if block.settings.align == "left" or block.settings.align == "right" %}rich-flex{% endif %}">
+
+      {% if block.settings.title != blank %}
+      {% case block.settings.align %}
+            {% when "left" %}
+                <div class="col-md-5 text-left">
+                    <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+                    <h2><span>{{ block.settings.title | escape }}</span></h2>
+                    <h4 class="rich-subheading">{{ block.settings.subheading }}</h4>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col-md-7 text-right">
+                    <img src="{{'recent-offers-border-2.png' | asset_url}}" />
+                </div>
+            {% when "right" %}
+                <div class="col-md-7 text-left">
+                    <img src="{{'join-the-club-border-2.png' | asset_url}}" />
+                </div>
+                <div class="col-md-5 text-right">
+                    <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+                    <h2><span>{{ block.settings.title | escape }}</span></h2>
+                    <h4 class="rich-subheading">{{ block.settings.subheading }}</h4>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+            {% when "center" %}
+                <div class="col-md-12">
+                    <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+                    <h2><span>{{ block.settings.title | escape }}</span></h2>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+      {% endcase %}
+
+
+      {% endif %}
+
+      <div class="homepage-indiv-section-wrapper grid--full homepage-featured-content-wrapper wow fadeIn">
+        {% case block.settings.width %}
+          {% when 'small' %}
+            <div class="col-md-6 col-md-offset-3 col-xs-12 homepage-featured-rich-text">
+          {% when 'medium' %}
+            <div class="col-md-8 col-md-offset-2 col-xs-12 homepage-featured-rich-text">
+          {% when 'large' %}
+            <div class="col-md-10 col-md-offset-1 col-xs-12 homepage-featured-rich-text">
+          {% when 'full-width' %}
+            <div class="col-md-12 col-xs-12 homepage-featured-rich-text">
+        {% endcase %}
+
+          {% if block.settings.text != blank %}
+            <div class="rte featured-row__subtext textarea">{{ block.settings.text }}</div>
+          {% endif %}
+
+          {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+            <div>
+              <a href="{{ block.settings.button_link }}" class="btn btn-custom">
+                {{ block.settings.button_label }}
+              </a>
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

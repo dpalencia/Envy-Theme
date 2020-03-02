@@ -46,7 +46,7 @@
                 <div class="feature-row__text col-md-{{ content_width_columns }} col-xs-12 wow fadeInUp">
                   <div class="feature-row__text--inner">
                     {% if section.settings.title != blank %}
-                      <h2 class="homepage-headline-text">Test<span>{{ section.settings.title | escape }}</span></h2>
+                      <h2 class="homepage-headline-text"><span>{{ section.settings.title | escape }}</span></h2>
                     {% endif %}
                     {% if section.settings.text_block != blank %}
                       <div class="rte featured-row__subtext textarea">{{ section.settings.text_block }}</div>

@@ -1,0 +1,76 @@
+{% case block.settings.image-width %}
+  {% when 'extra-small' %}
+    {%- assign image_width_columns = 2 -%}
+    {%- assign content_width_columns = 10 -%}
+  {% when 'small' %}
+    {%- assign image_width_columns = 3 -%}
+    {%- assign content_width_columns = 9 -%}
+  {% when 'medium' %}
+    {%- assign image_width_columns = 4 -%}
+    {%- assign content_width_columns = 8 -%}
+  {% when 'large' %}
+    {%- assign image_width_columns = 5 -%}
+    {%- assign content_width_columns = 7 -%}
+  {% when 'extra-large' %}
+    {%- assign image_width_columns = 6 -%}
+    {%- assign content_width_columns = 6 -%}
+{% endcase %}
+
+{% case block.settings.colors %}
+  {% when 'white' %}
+  <div class="homepage-sections-wrapper homepage-sections-wrapper--white">
+  {% when 'light' %}
+  <div class="homepage-sections-wrapper homepage-sections-wrapper--light">
+  {% when 'accent' %}
+  <div class="homepage-sections-wrapper homepage-sections-wrapper--accent">
+  {% when 'dark' %}
+  <div class="homepage-sections-wrapper homepage-sections-wrapper--dark">
+{% endcase %}
+
+    <div class="container">
+    	<div class="row">
+
+        <div class="index-section col-md-12">
+          <div class="page-width feature-row homepage-featured-content">
+
+          	<div class="feature-row__container">
+              <div class="feature-row{% if block.settings.layout == 'right' %} feature-row--image-right{% endif %}">
+                <div class="feature-row__image col-md-{{ image_width_columns }} col-xs-12 wow fadeIn">
+                  {% if block.settings.image != blank %}
+                    {% include 'responsive-image' with block.settings.image, alt: block.settings.image.alt %}
+                  {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'icon icon--placeholder' }}
+                  {% endif %}
+                </div>
+
+                <div class="feature-row__text col-md-{{ content_width_columns }} col-xs-12 wow fadeInUp">
+                  <div class="feature-row__text--inner">
+                    {% if block.settings.title != blank %}
+                      <h2 class="homepage-headline-text"><span>{{ block.settings.title | escape }}</span></h2>
+                    {% endif %}
+                    {% if block.settings.text_block != blank %}
+                      <div class="rte featured-row__subtext textarea">{{ block.settings.text_block }}</div>
+                    {% endif %}
+                    {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+                        {% if block.settings.newTab == true %}
+                            <a target="_blank" href="{{ block.settings.button_link }}" class="btn btn-custom">
+                                {{ block.settings.button_label }}
+                            </a>
+                        {% else %}
+                            <a href="{{ block.settings.button_link }}" class="btn btn-custom">
+                                {{ block.settings.button_label }}
+                            </a>
+                        {% endif %}
+
+                    
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>

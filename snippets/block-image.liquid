@@ -1,0 +1,49 @@
+{% if block.settings.image != blank %}
+  <style>
+    {% capture selector %}.image-section--{{ block.id }} .img{% endcapture %}
+    {% if block.settings.parallax %}{% assign scale = 2 %}{% else %}{% assign scale = 1 %}{% endif %}
+    {% include 'responsive-background-image' with block.settings.image, selector: selector, scale: scale %}
+
+    .image-section--{{ block.id }} .img {
+      background-position: {{ block.settings.alignment }};
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    {% if block.settings.parallax %}
+    @media screen and (max-width: 768px) {
+      .image-section--{{ block.id }} .img {
+        min-height: 100%;
+      }
+    }
+    {% endif %}
+
+  </style>
+{% endif %}
+
+{% if block.settings.text-over-image-width == 'full-width' %}
+<div class="container-fluid homepage-slider-container">
+{% else %}
+<div class="container">
+{% endif %}
+
+<div class="row">
+  <div class="page-width col-md-12">
+  		<div class="index-section parallax-wrapper">
+  		  <div class="image-section image-section--{{ block.id }} image-section--{{ block.settings.hero_size }}{% if block.settings.parallax %} image-section-parallax parallax{% endif %} wow fadeIn">
+  		    {% if block.settings.image == blank %}
+  		      <div class="placeholder-background img">
+  			      {{ 'lifestyle-1' | placeholder_svg_tag: 'icon icon--placeholder' }}
+  		      </div>
+          {% else %}
+            <div class="img"></div>
+  		    {% endif %}
+  		  </div>
+  		</div>
+  	</div>
+  </div>
+</div>
+
