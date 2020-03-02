@@ -212,6 +212,11 @@
 				{% if section.settings.enable_continue_shopping %}
 					<a href="{{ routes.root_url }}" class="btn btn-default continue-shopping--cart">{{ 'layout.cart.continue_shopping' | t }}</a>
 				{% endif %}
+                  
+				<!-- Route Code Edited 2/28/2020 -->
+                <div class="route-div"></div>
+                <!-- End Route Code -->
+                  
 				<input id="update_quantities" type="submit" value="{{ 'cart.general.update' | t }}" title="{{ 'cart.general.update' | t }}" name="update" class="btn btn-default" />
 				<input id="cart_submit" type="submit" value="{{ 'cart.general.checkout' | t }}" name="checkout" class="btn btn-success" />
 			</div>

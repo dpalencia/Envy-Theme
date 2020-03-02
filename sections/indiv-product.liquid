@@ -97,12 +97,13 @@
           <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
         {% endif %}
 
-        
+      
 
         {% if section.settings.show_product_description %}
           {% unless product.empty? %}
             <div class="product-description-wrapper">
-              {{ product.description }}
+            {% assign slicedDescription = product.description | slice: 0, 300 %}
+             {{ slicedDescription | append: '...'}} 
             </div>
           {% else %}
             {{ 'general.onboarding.product_description' | t }}
@@ -110,7 +111,7 @@
         {% endif %}
         
        	  <div class="product-read-more">
-            <a href="{{product.url}}">Read More ></a>  
+            <a href="{{product.url}}">Read More </a>  
           </div>
         {% unless product.empty? %}
 
@@ -250,7 +251,6 @@
                     <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}" data-cart-action="{{ section.settings.cart-action }}">
                         {{ 'products.product.add_to_cart' | t }}
                     </button>
-
                   </div>
 
                   </div>

@@ -68,7 +68,8 @@
 	{{ 'custom.js' | asset_url | script_tag }}
 	{{ 'sections.js' | asset_url | script_tag }}
 
-</head>
+{% include 'sca-quick-view-init' %}
+ </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} flexbox-wrapper{% unless settings.animations_enabled %} animations-disabled{% endunless %}">
 
@@ -125,6 +126,7 @@
     };
 	</script>
 
-</body>
+{% include 'sca-quick-view-template' %} 
+ </body>
 
 </html>

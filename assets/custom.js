@@ -415,3 +415,4 @@ document.addEventListener('shopify:section:load', load_googlemaps);
 $(document).ready(load_googlemaps);
 
 })(window.wetheme.$);
+
