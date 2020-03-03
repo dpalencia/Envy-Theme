@@ -15,11 +15,6 @@
 	}
 	</style>
 
-	{% if collection.image %}
-		<div class="collection-image-wrapper">
-			{% include 'responsive-image' with collection.image, alt: collection.title %}
-		</div>
-	{% endif %}
 {% endif %}
 
 <div class="container">
@@ -44,9 +39,19 @@
 		<div class="description-content">{{ collection.description }}</div>
 	{% endif %}
 
+    
+    {% if collection.image %} 
+        <div class="underneath-description-container">
+            <img class="collection-underneath-image" src="{{ collection.image.src | img_url: 'master' }}" />
+        </div> 
+
+    {% endif %}
+
+    {% comment %}
     <div class="underneath-description-container">
         <img class="collection-underneath-image" src="{{'collection-divider.png' | asset_url}}" />
     </div>
+    {% endcomment %}
 </div>
 
 

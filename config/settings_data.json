@@ -617,8 +617,8 @@
           "blog-sidebar-link": "",
           "blog_sidebar_title": "",
           "blog_sidebar_desc": "",
-          "show_blog_tags": true,
-          "show_recent_posts": true
+          "show_blog_tags": false,
+          "show_recent_posts": false
         }
       },
       "article-template": {
@@ -633,8 +633,8 @@
           "blog-sidebar-link": "",
           "blog_sidebar_title": "",
           "blog_sidebar_desc": "",
-          "show_blog_tags": true,
-          "show_recent_posts": true
+          "show_blog_tags": false,
+          "show_recent_posts": false
         }
       },
       "cart-template": {

@@ -1,4 +1,32 @@
+.blog-main ul {
+    margin-top: 25px;
+}
 
+
+h2 {
+    text-transform: uppercase;
+}
+
+.title-bar {
+    margin-top: 35px;
+}
+
+.title-bar h2 {
+    margin-top: 0px;
+}
+
+.title-bar h1 {
+    font-size: 50px !important;
+  padding-bottom: 25px;
+}
+
+.title-bar h1:after {
+  display: none;
+}
+
+.description-content {
+    padding: 25px 0 25px;
+}
 
 .slider-caption {
     padding: 24px 0px 15px;
@@ -261,9 +289,10 @@ button#purchase.add-to-cart--secondary {
 }
 
 .indiv-product-title-text, .money-styling {
-  font-weight: bold;
-  font-size: 21px;
-  margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+    line-height: 1.25;
 }
 
 .indiv-product-subheading {
