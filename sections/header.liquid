@@ -78,7 +78,11 @@
 	{% else %}
 		<a class="site-header__logo-link custom-font" href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
 	{% endif %}
-
+  {% if shop.metafields.custom_fields["under_logo_announcement"] != blank %}
+  <div class="custom-field custom-field__under-logo-announcement custom-field__type--text">
+      {{ shop.metafields.custom_fields["under_logo_announcement"] }}
+  </div>
+{% endif %}
 {% endcapture %}
 
 {% if settings.enable-article-results %}

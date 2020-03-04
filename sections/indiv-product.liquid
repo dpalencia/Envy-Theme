@@ -102,17 +102,18 @@
         {% if section.settings.show_product_description %}
           {% unless product.empty? %}
             <div class="product-description-wrapper">
-            {% assign slicedDescription = product.description | slice: 0, 300 %}
+            {% assign slicedDescription = product.description | slice: 0, 550 %}
              {{ slicedDescription | append: '...'}} 
+             <span class="product-read-more"> 
+              <a href="{{product.url}}">Read More </a>  
+             </span>
             </div>
           {% else %}
             {{ 'general.onboarding.product_description' | t }}
           {% endunless %}
         {% endif %}
         
-       	  <div class="product-read-more">
-            <a href="{{product.url}}">Read More </a>  
-          </div>
+
         {% unless product.empty? %}
 
           {% if product.available %}
@@ -235,23 +236,26 @@
                       {% endif %}
                     {% endfor %}
                   </select>
-
-                  {% if section.settings.show_quantity_selector %}
-      			        <div class="{% if section.settings.product_variant_style == 'dropdowns' %}selector-wrapper{% else %}swatches-wrapper{% endif %} {% if section.settings.image_size == 'large' %}col-md-12{% else %}col-md-6{% endif %} col-sm-12 col-xs-12">
-      				        <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
-                            <div class="quantity-controls">
-                                <button type="button" class="qty-minus">-</button>
-      				                <input type="text" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
-                                <button type="button" class="qty-plus">+</button>
-                            </div>
-      					    </div>
-      					  {% endif %}
-
-                  <div class="button-container col-md-12 col-sm-12 col-xs-12">
-                    <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}" data-cart-action="{{ section.settings.cart-action }}">
-                        {{ 'products.product.add_to_cart' | t }}
-                    </button>
-                  </div>
+                  
+                  <div class="row row-flex">
+                    {% if section.settings.show_quantity_selector %}
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <div>
+                       
+                              <div class="quantity-controls">
+                                  <button type="button" class="qty-minus">-</button>
+                                <input type="text" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                                  <button type="button" class="qty-plus">+</button>
+                              </div>
+                      </div>
+                    </div>
+                    {% endif %}
+                    <div class="button-container col-md-6 col-sm-12 col-xs-12">
+                      <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}" data-cart-action="{{ section.settings.cart-action }}">
+                          {{ 'products.product.add_to_cart' | t }}
+                      </button>
+                    </div>
+                </div>
 
                   </div>
 
