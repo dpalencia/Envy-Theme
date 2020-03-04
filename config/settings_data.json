@@ -77,14 +77,14 @@
     "sm_houzz_link": "",
     "sm_tumblr_link": "",
     "sm_linkedin_link": "",
-    "popup--enable": false,
+    "popup--enable": true,
     "popup--test-mode": false,
     "pop-up-time": "7",
     "popup-delay": 5,
     "desktop-popup-style": "slide-up",
     "popup-newsletter-image": "shopify:\/\/shop_images\/glass-silhouette.jpg",
     "pop-up-text-header-text": "Don't Miss a Deal!",
-    "pop-up-text-description-text": "<p>The finest organic and natural wines, offered once a day or until sold out.<\/p>",
+    "pop-up-text-description-text": "<p>Sign up for free to receive special offers, exclusive wine tasting&nbsp;invites, and more.<\/p>",
     "popup--show-social-icons": false,
     "popup--show-newsletter": true,
     "show_multiple_currencies": false,
@@ -423,7 +423,7 @@
           "1582325997101": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/poolside-whites-site.jpg",
+              "image": "shopify:\/\/shop_images\/poolside-whites-site_aeae6d1a-a5b3-4350-b29c-ede7c29b977f.jpg",
               "mobile_image": "",
               "title": "Poolside Whites",
               "text": "<p>A six bottle collection of brisk, dry, minerally white wines, perfect for the porch or the pool.<\/p>",
@@ -518,15 +518,15 @@
           "title": "Custom Orders",
           "text": "<p>Get in touch for curated, custom clubs or special events for your office<\/p>",
           "button_label": "Contact Us",
-          "button_link": "shopify:\/\/pages\/contact"
+          "button_link": "mailto:hello@prologuewine.com"
         }
       },
       "1582315349166": {
         "type": "feature-row",
         "settings": {
           "colors": "white",
-          "image-width": "extra-large",
-          "image": "shopify:\/\/shop_images\/Morchella-Image_8402b6f2-e7ea-46df-9e2c-6589a0d687e1.png",
+          "image-width": "large",
+          "image": "shopify:\/\/shop_images\/Morchella-image-2.png",
           "layout": "right",
           "title": "",
           "text_block": "<p><strong>Coming Soon!<\/strong><\/p>\n<p><\/p>\n<p>Prologue Wine Co. is the exclusive place for Mochella Wild Foods:&nbsp; the same wild foraged ingredients that acclaimed chefs are using in the Bay's top restaurants.<\/p>\n<p><\/p>\n<p><strong>Launching soon! Join the email list to stay informed.<\/strong><\/p>",
@@ -535,27 +535,13 @@
           "newTab": true
         }
       },
-      "1582315469946": {
-        "type": "rich-text",
-        "settings": {
-          "subheading": "",
-          "align": "center",
-          "colors": "white",
-          "width": "full-width",
-          "title": "Morchella Wild Foods",
-          "text": "<p>Wild Bay-Area Foraged. A Favorite of Michelin Chefs.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
       "1582741885604": {
         "type": "custom-html",
-        "disabled": true,
         "blocks": {
           "1582741893355": {
             "type": "html",
             "settings": {
-              "code": "<div style=\"text-align:center; padding: 50px 0px 0px;\"><h1>JOIN MAILING LIST<\/h1><\/div>\n<link href=\"\/\/cdn-images.mailchimp.com\/embedcode\/classic-10_7.css\" rel=\"stylesheet\" type=\"text\/css\">\n<style type=\"text\/css\">\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. *\/\n<\/style>\n<div id=\"mc_embed_signup\">\n<form action=\"https:\/\/prologuewine.us4.list-manage.com\/subscribe\/post?u=145c4c65fc941762d69a5b7da&amp;id=5ee6c230d4\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate=\"\">\n    <div id=\"mc_embed_signup_scroll\">\n\t\n<div class=\"indicates-required\">\n<span class=\"asterisk\">*<\/span> indicates required<\/div>\n<div class=\"mc-field-group\">\n\t<label for=\"mce-EMAIL\">Email Address  <span class=\"asterisk\">*<\/span>\n<\/label>\n\t<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\n<\/div>\n\t<div id=\"mce-responses\" class=\"clear\">\n\t\t<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"><\/div>\n\t\t<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"><\/div>\n\t<\/div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_145c4c65fc941762d69a5b7da_5ee6c230d4\" tabindex=\"-1\" value=\"\"><\/div>\n    <div class=\"clear\"><input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"><\/div>\n    <\/div>\n<\/form>\n<\/div>",
+              "code": "<br>",
               "width": "100%"
             }
           }
@@ -597,13 +583,21 @@
           "1582844401379-0": {
             "type": "html",
             "settings": {
-              "code": "<br><br>",
+              "code": "<br><br><br>",
+              "width": "100%"
+            }
+          },
+          "1583276516165": {
+            "type": "html",
+            "settings": {
+              "code": "<h2><span style=\"font-size: 50px; padding-bottom: 0px; margin-bottom: 0px;\">MORCHELLA WILD FOODS<\/span><\/h2>\n<span style=\"font-size: 23px\">Wild Bay-Area Foraged. A Favorite of Michelin Chefs.<\/span>",
               "width": "100%"
             }
           }
         },
         "block_order": [
-          "1582844401379-0"
+          "1582844401379-0",
+          "1583276516165"
         ],
         "settings": {}
       },
@@ -658,6 +652,68 @@
           "1582931492957-0"
         ],
         "settings": {}
+      },
+      "page-builder": {
+        "type": "page-builder",
+        "blocks": {
+          "1583274096819": {
+            "type": "custom-html",
+            "settings": {
+              "html": "<h2><span style=\"font-size: 35px;\">Who Are We?<\/span><\/h2><center><span style=\"font-size: 18px;\">Prologue Wine Company is a direct-to-consumer online wine retailer, offering daily selections<br> of curated wines, available in limited quantities on a daily-offer basis.<\/span><\/center><br><br>"
+            }
+          },
+          "1583274167295": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/about-1.jpg",
+              "parallax": false,
+              "alignment": "center",
+              "hero_size": "x-large",
+              "text-over-image-width": "full-width"
+            }
+          },
+          "1583274552257": {
+            "type": "custom-html",
+            "settings": {
+              "html": "<br><br><center><span style=\"font-size: 18px;\">Having spent more than twenty years in the wine industry, founder Zach Pace has worked in every aspect of the industry and travelled the world over in pursuit of learning about the entire world of wine. With over fifteen years experience as a sommelier and teacher, Zach Pace and Prologue Wine Co. brings you unprecedented access to the world’s finest wines. Based in the backyard of northern California’s acclaimed wine regions, he has unprecedented connections and access.<\/span><\/center>"
+            }
+          },
+          "1583274223608": {
+            "type": "custom-html",
+            "settings": {
+              "html": "<br><h2><span style=\"font-size: 35px;\">The Manifesto<\/span><\/h2>"
+            }
+          },
+          "1583274232592": {
+            "type": "image-with-text",
+            "settings": {
+              "colors": "light",
+              "image-width": "extra-large",
+              "image": "shopify:\/\/shop_images\/about-2_48f08493-64d7-46b9-9746-1bcd44fd08a1.png",
+              "layout": "right",
+              "title": "",
+              "text_block": "<p>Wine is one of the last food products that lacks in transparency &ndash; how is one to know whether the liquid we put into our bodies was grown with GMOs, glyphosate, pesticides, or enhanced with industrial food dyes, caramel color, or other unnatural products?<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "newTab": false
+            }
+          },
+          "1583274118871": {
+            "type": "custom-html",
+            "settings": {
+              "html": "<br><center><span style=\"font-size: 18px;\">Whether or not you agree they contribute to taste or terroir, they’re undeniably bad for the earth and disingenuous for the consumer. \n<br><br>\nBuy from those you believe in: At Prologue, we believe in natural, unadulterated wine, made simply and without intervention or funny business. From “sustainably-grown”, organic, or biodynamic practices, there are myriad certifications or designations – we’re not dogmatic; we simply support products and growers who make wine that is good for our collective health – from the earth, to the ecosystems around the vineyard, to our bodies. We don’t sell anything we don’t drink, eat, and love ourselves!<\/span><\/center><br>"
+            }
+          }
+        },
+        "block_order": [
+          "1583274096819",
+          "1583274167295",
+          "1583274552257",
+          "1583274223608",
+          "1583274232592",
+          "1583274118871"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -672,7 +728,6 @@
       "1582315063813",
       "text-over-image",
       "1582844401379",
-      "1582315469946",
       "1582315349166",
       "1582741885604"
     ]

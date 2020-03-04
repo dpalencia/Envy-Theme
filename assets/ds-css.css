@@ -1,3 +1,7 @@
+.footer h3 {
+    text-transform: uppercase !important;
+}
+
 .blog-main ul {
     margin-top: 25px;
 }
@@ -60,10 +64,19 @@ h2 {
     font-weight: 200;
 }
 
-/* Hompage wrapper */
+/* Homepage wrapper */
 
 .homepage-section--indiv-product-wrapper .homepage-sections-wrapper {
   padding-top: 0px !important;
+}
+
+.slider-caption .slider-caption--subheading.size-24 p {
+    font-family: "ITC Caslon No 224", serif;
+}
+
+.indiv-product img {
+    padding: 0px 40px 10px;
+    background-color: #ffffff;
 }
 
 
@@ -113,7 +126,7 @@ button#purchase.add-to-cart--secondary {
 }
 
 .featured-row__subtext p {
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .homepage-section--text-over-image-wrapper .rte {
@@ -127,7 +140,7 @@ button#purchase.add-to-cart--secondary {
 
 .entry-content.product-description-main-wrapper.wow.fadeInUp {
     background-color: #f5f6f8;
-    padding: 40px;
+    padding: 25px 40px 40px;
 }
 
 .product-read-more {
@@ -178,9 +191,10 @@ button#purchase.add-to-cart--secondary {
 
 
 .shipping-text h4 {
-  font-style: italic;
+  font-style: normal;
     font-size: 18px;
     font-weight: 300 !important;
+    font-family: "ITC Caslon No 224", serif;
 }
 
 .quantity-controls {
@@ -243,6 +257,10 @@ button#purchase.add-to-cart--secondary {
 .sca-brankmark {
   display: none !important;
   visibility: hidden !important;
+}
+
+.sca-qv-image .sca-qv-button {
+    top: 25% !important;
 }
 
 
@@ -445,5 +463,24 @@ width: 100%;
   border: 0px solid transparent;
   text-transform: uppercase;
   padding: 11px 25px 8px 25px;
+}
+
+
+/* FAQ */
+
+
+.s4com-sub-heading {
+    display: none !important;
+}
+
+.s4com-articles a h4 {
+    color: #333333;
+    font-size: 20px !important;
+    padding-left: 30px !important;
+    text-transform: uppercase !important;
+}
+
+.s4com-articles {
+    padding-left: 0px !important;
 }
 
