@@ -1,0 +1,21 @@
+<div class="row row-flex">
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <div>
+       
+              <div class="quantity-controls">
+                  <button type="button" class="qty-minus">-</button>
+                <input type="text" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+                  <button type="button" class="qty-plus">+</button>
+              </div>
+      </div>
+    </div>
+    <div class="button-container col-md-6 col-sm-12 col-xs-12">
+        <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}"{% if disabled %} disabled="disabled"{% endif %} data-cart-action="{{ section.settings.cart-action }}">
+            {% if pick_an_option or current_variant.available %}
+              {{ 'products.product.add_to_cart' | t }}
+            {% else %}
+                {{ 'products.product.sold_out' | t }}
+            {% endif %}
+          </button>
+    </div>
+</div>

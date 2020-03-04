@@ -289,6 +289,8 @@ button#purchase.add-to-cart--secondary {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .homepage-section--featured-products-wrapper .homepage-sections-wrapper {
@@ -302,6 +304,10 @@ button#purchase.add-to-cart--secondary {
 
 .homepage-featured-products .hp-title {
   min-height: 160px !important;
+}
+
+#shopify-section-collection-template .hp-title {
+  min-height: 212px !important;
 }
 
 .indiv-product {
@@ -384,18 +390,11 @@ h4.rich-subheading {
 
 
 /* Feature Row (Image and Text Section) */
-.index-section {
+#shopify-section-1582315349166 .index-section, 
+#shopify-section-1582315349166 .feature-row__text, 
+#shopify-section-1582315349166 .feature-row__image {
   padding: 0px;
 }
-
-.feature-row__text {
-  padding: 0px;
-}
-
-.feature-row__image {
-  padding: 0px;
-}
-
 
 /* Footer */
 
@@ -431,13 +430,17 @@ width: 100%;
   max-width: 100%;
 }
 
-/* Footer Mailchimp */
+/* Mailchimp */
 
 @media (min-width: 992px) {
   .mc-row {
     display: flex;
     align-items: center;
   }
+}
+
+.mc-btn-container { 
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .mc-row {
@@ -449,7 +452,7 @@ width: 100%;
   flex-direction: row;
 }
 
-.mc-flex-container #mce-responses.clear {
+.mc-flex-container #mce-responses.clear { 
   position: absolute;
 }
 

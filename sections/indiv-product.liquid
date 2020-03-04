@@ -237,27 +237,10 @@
                     {% endfor %}
                   </select>
                   
-                  <div class="row row-flex">
-                    {% if section.settings.show_quantity_selector %}
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                      <div>
-                       
-                              <div class="quantity-controls">
-                                  <button type="button" class="qty-minus">-</button>
-                                <input type="text" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
-                                  <button type="button" class="qty-plus">+</button>
-                              </div>
-                      </div>
-                    </div>
-                    {% endif %}
-                    <div class="button-container col-md-6 col-sm-12 col-xs-12">
-                      <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}" data-cart-action="{{ section.settings.cart-action }}">
-                          {{ 'products.product.add_to_cart' | t }}
-                      </button>
-                    </div>
-                </div>
+                  
+                {% include 'quantity-add-to-cart' %}
 
-                  </div>
+                </div>
 
             {% endform %}
 
@@ -279,7 +262,12 @@
           </div>
 
         {% endunless %}
-        <div class="shipping-text"><h4>Free shipping on 6 bottles or more</h4></div>
+        {% if product.metafields.custom_fields["free_shipping_message"] != blank %}
+            <div class="shipping-text">
+              <h4>{{ product.metafields.custom_fields["free_shipping_message"] }}</h4>
+            </div>
+        {% endif %}
+       
 
       </section>
 
