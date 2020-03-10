@@ -81,10 +81,10 @@
     "popup--test-mode": false,
     "pop-up-time": "7",
     "popup-delay": 5,
-    "desktop-popup-style": "slide-up",
+    "desktop-popup-style": "fullscreen",
     "popup-newsletter-image": "shopify:\/\/shop_images\/glass-silhouette.jpg",
-    "pop-up-text-header-text": "Don't Miss a Deal!",
-    "pop-up-text-description-text": "<p>Sign up for free to receive special offers, exclusive wine tasting&nbsp;invites, and more.<\/p>",
+    "pop-up-text-header-text": "DON'T MISS A DEAL",
+    "pop-up-text-description-text": "<p>Sign up for free to receive daily&nbsp;offers, exclusive wine tasting&nbsp;invites, and more.<\/p>",
     "popup--show-social-icons": false,
     "popup--show-newsletter": true,
     "show_multiple_currencies": false,
@@ -154,9 +154,9 @@
               "image": "shopify:\/\/shop_images\/green-top-bar.jpg",
               "mobile_image": "",
               "title": "",
-              "text": "<p>NATURAL &amp; ORGANIC&nbsp;WINES, OFFERED DAILY<\/p>",
+              "text": "<p>EXCLUSIVE DEALS ON NATURAL &amp; ORGANIC WINE,&nbsp;OFFERED DAILY<\/p>",
               "button_text": "",
-              "link": "#",
+              "link": "",
               "caption-background": "rgba(0,0,0,0)",
               "caption-text": "#ffffff",
               "button-text": "#ffffff",
@@ -171,7 +171,7 @@
               "image": "shopify:\/\/shop_images\/green-top-bar.jpg",
               "mobile_image": "",
               "title": "",
-              "text": "<p>20% OFF YOUR FIRST DAILY OFFER. USE CODE PROLOGUE20<\/p>",
+              "text": "<p>FREE SHIPPING ON SIX BOTTLES OR MORE, ALWAYS<\/p>",
               "button_text": "",
               "link": "",
               "caption-background": "rgba(0,0,0,0)",
@@ -190,7 +190,7 @@
         "settings": {
           "slider-animation": "slide",
           "slider-width": "full-width",
-          "slider-slide-time": 8,
+          "slider-slide-time": 6,
           "caption-heading-size": 52,
           "caption-subheading-size": 20,
           "show-slide-full-screen": false,
@@ -314,9 +314,9 @@
         "settings": {
           "colors": "white",
           "title": "",
-          "featured_product": "chateau-cornas-2015",
+          "featured_product": "renzo-seghesio-barolo-ginestra-2010",
           "image-placement": "left",
-          "cart-action": "cart",
+          "cart-action": "added",
           "product_variant_style": "dropdowns",
           "show_discount": "hide",
           "show-vendor": false,
@@ -350,7 +350,7 @@
           "social_sharing_pinterest": false,
           "image_size": "small",
           "thumbnail_position": "below",
-          "enable_zoom": true,
+          "enable_zoom": false,
           "show_reviews": true
         }
       },
@@ -412,7 +412,7 @@
           "colors": "white",
           "width": "large",
           "title": "Today's Offer",
-          "text": "<p>Don't miss out on this one-of-a-kind cabernet sauvignon<\/p>",
+          "text": "<p>Perfectly-aged Barolo. A Prologue Wine Co. Exclusive.<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -426,7 +426,7 @@
               "image": "shopify:\/\/shop_images\/poolside-whites-site_aeae6d1a-a5b3-4350-b29c-ede7c29b977f.jpg",
               "mobile_image": "",
               "title": "Poolside Whites",
-              "text": "<p>A six bottle collection of brisk, dry, minerally white wines, perfect for the porch or the pool.<\/p>",
+              "text": "<p>A six bottle collection of brisk, mineral-driven white wines perfect for the porch or the pool.<\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -460,7 +460,7 @@
               "image": "shopify:\/\/shop_images\/the-dinner-party-site.jpg",
               "mobile_image": "",
               "title": "The Dinner Party",
-              "text": "<p>Our most popular club! One sparkling, two whites, and three reds. Crafted to be paired with food and friends.<\/p>",
+              "text": "<p>Our most popular club. One sparkling, two whites, and three reds. Crafted to be paired with food and friends.<\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -477,7 +477,7 @@
               "image": "shopify:\/\/shop_images\/the-bubble-club-site.jpg",
               "mobile_image": "",
               "title": "The Bubble Club",
-              "text": "<p>Who doesn&rsquo;t love bubbles?! Six unique, natural, lip-smacking sparklers from around the globe.<\/p>",
+              "text": "<p>Six natural, mouth-watering sparkling wines from the Old World and New.<\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -515,8 +515,8 @@
           "align": "center",
           "colors": "light",
           "width": "full-width",
-          "title": "Custom Orders",
-          "text": "<p>Get in touch for curated, custom clubs or special events for your office<\/p>",
+          "title": "CUSTOM SERVICES",
+          "text": "<p>Special requests. Curated events. Insider access. We can make it happen &ndash; get in touch.<\/p>",
           "button_label": "Contact Us",
           "button_link": "mailto:hello@prologuewine.com"
         }
@@ -529,8 +529,8 @@
           "image": "shopify:\/\/shop_images\/Morchella-image-2.png",
           "layout": "right",
           "title": "",
-          "text_block": "<p><strong>Coming Soon!<\/strong><\/p>\n<p><\/p>\n<p>Prologue Wine Co. is the exclusive place for Mochella Wild Foods:&nbsp; the same wild foraged ingredients that acclaimed chefs are using in the Bay's top restaurants.<\/p>\n<p><\/p>\n<p><strong>Launching soon! Join the email list to stay informed.<\/strong><\/p>",
-          "button_label": "Join Now",
+          "text_block": "<p><strong>Coming Soon!<\/strong><\/p>\n<p><\/p>\n<p>Prologue Wine Co. is the exclusive place for Morchella Wild Foods:&nbsp; the same wild foraged ingredients that acclaimed chefs are using in the Bay's top restaurants.<\/p>\n<p><\/p>\n<p><strong>Join the email list to stay informed.<\/strong><\/p>",
+          "button_label": "JOIN THE LIST",
           "button_link": "http:\/\/eepurl.com\/gS3UkL",
           "newTab": true
         }
@@ -554,7 +554,7 @@
       "1582757967187": {
         "type": "rich-text",
         "settings": {
-          "subheading": "Still in stock, but going fast",
+          "subheading": "Catch these before they're gone.",
           "align": "left",
           "colors": "white",
           "width": "medium",
@@ -567,7 +567,7 @@
       "1582758361284": {
         "type": "rich-text",
         "settings": {
-          "subheading": "Six curated bottles a month. <br> Upgrade or cancel anytime. Free shipping, always.",
+          "subheading": "Six curated bottles a month. <br> Cancel anytime. Free shipping, always.",
           "align": "right",
           "colors": "white",
           "width": "medium",

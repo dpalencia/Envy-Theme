@@ -2,7 +2,7 @@
   ---
   Author: Helium
   Documentation: https://customerfields.com/help
-  Version: 3.1.1
+  Version: 3.1.3
   The following snippet exists to serve forms for the Customer Fields app.
   YOU SHOULD NOT BE EDITING THIS FILE. CHANGES MAY BE OVERWRITTEN!
   Instead, you should read our documentation and see how you can create 
@@ -66,8 +66,16 @@
       return /complete|interactive|loaded/.test(document.readyState);
     };
 
+    var customerExistsInWindow = function() {
+      return ('customer' in window.CF);
+    };
+
+    var embedFormHasMounted = function() {
+      return !!document.querySelector('.cf-form-inner');
+    };
+
     var customerReady = function(callback) {
-      if ('customer' in window.CF) {
+      if (customerExistsInWindow()) {
         handleCallback(callback);
       } else {
         var createListener = function() {
@@ -79,15 +87,19 @@
         if (domIsReady()) {
           createListener();
         } else {
-          document.addEventListener("DOMContentLoaded", createListener);
+          document.addEventListener("DOMContentLoaded", function() {
+            if (customerExistsInWindow()) {
+              handleCallback(callback);
+            } else {
+              createListener();
+            }
+          });
         }
       }
-    };
+    }
 
     var formsReady = function(callback) {
-      var cfFormExists = !!document.querySelector('.cf-form-inner');
-
-      if (cfFormExists) {
+      if (embedFormHasMounted()) {
         handleCallback(callback);
       } else {
         var createListener = function() {
@@ -99,7 +111,13 @@
         if (domIsReady()) {
           createListener();
         } else {
-          document.addEventListener("DOMContentLoaded", createListener);
+          document.addEventListener("DOMContentLoaded", function() {
+            if (embedFormHasMounted()) {
+              handleCallback(callback);
+            } else {
+              createListener();
+            }
+          });
         }
       }
     };
@@ -218,6 +236,6 @@
   </style>
 {% else %}
   
-  <script async src="https://assets.customerfields.com/releases/{{ version | default: '3.1.1' }}/cf-api.js"></script>
+  <script async src="https://assets.customerfields.com/releases/{{ version | default: '3.1.3' }}/cf-api.js"></script>
   
 {% endunless %}

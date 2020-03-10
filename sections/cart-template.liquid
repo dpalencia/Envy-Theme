@@ -37,10 +37,13 @@
 							</div>
 						{% endunless %}
 
-						{% assign property_size = item.properties | size %}
+						<span class="bold_ro_desc" data-product-id="{{ item.id }}-{{ forloop.index0 }}"></span>
+{% assign property_size = item.properties | size %}
 						{% if property_size > 0 %}
 							<br />
-							{% for p in item.properties %}
+							
+{%- comment -%}
+{% for p in item.properties %}
 								{% if p.last != blank and p.first.first != '_' %}
 									{{ p.first }}:
 									{% comment %}
@@ -54,6 +57,8 @@
 									<br>
 								{% endif %}
 							{% endfor %}
+{%- endcomment -%}
+<span class="bold_load_cart_item_properties"></span>
 						{% endif %}
 
 						<div class="cart-table-item-remove">
@@ -64,11 +69,11 @@
 					<td class="cart-table-price">
 						{%- if item.original_price != item.final_price -%}
 							<span class="hidden">{{ 'products.general.regular_price' | t }}</span>
-							<del><span class="money">{{ item.original_price | money }}</span></del>
+							<del><span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" style="display:none !important;"></span>{{ item.original_price | money }}</span></del>
 							<span class="hidden">{{ 'products.general.sale_price' | t }}</span>
-							<span class="order-discount"><span class="money">{{ item.final_price | money }}</span></span>
+							<span class="order-discount"><span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price_2" style="display:none !important;"></span>{{ item.final_price | money }}</span></span>
 						{%- else -%}
-							<span class="money">{{ item.original_price | money }}</span>
+							<span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price_3" style="display:none !important;"></span>{{ item.original_price | money }}</span>
 						{%- endif -%}
 
 						{% if item.unit_price != blank %}
@@ -100,11 +105,11 @@
 					<td class="cart-table-line-price cart--final-column">
 						{%- if item.original_line_price != item.final_line_price -%}
 							<span class="hidden">{{ 'products.general.regular_price' | t }}</span>
-							<del><span class="money">{{ item.original_line_price | money }}</span></del>
+							<del><span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" style="display:none !important;"></span>{{ item.original_line_price | money }}</span></del>
 							<span class="hidden">{{ 'products.general.sale_price' | t }}</span>
-							<span class="order-discount"><span class="money">{{ item.final_line_price | money }}</span></span>
+							<span class="order-discount"><span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total_2" style="display:none !important;"></span>{{ item.final_line_price | money }}</span></span>
 						{%- else -%}
-							<span class="money">{{ item.original_line_price | money }}</span>
+							<span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total_3" style="display:none !important;"></span>{{ item.original_line_price | money }}</span>
 						{%- endif -%}
 
 						{%- if item.line_level_discount_allocations != blank -%}
@@ -150,7 +155,7 @@
 		<div class="cart-totals--wrapper custom-font">
 			<div id="cart-total-header">{{ 'cart.general.subtotal' | t }}</div>
 			<div id="cart-total-final-price">
-				<span class="money">{{ cart.total_price | money }}</span>
+				<span class="money"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money }}</span>
 			</div>
 			<div class="cart-table-price-per-unit">
 				{%- if item.unit_price_measurement -%}

@@ -22,9 +22,9 @@
 {%- assign limit = section.settings.grid | times: section.settings.rows -%}
 {% paginate collection.products by limit %}
 
-<div data-section-id="{{ section.id }}" data-section-type="collection-template">
+<div data-section-id="{{ section.id }}" class="{{ collection.handle }}" data-section-type="collection-template">
 
-<div id="collections-main" class="{{ collection.handle }}">
+<div id="collections-main"> 
 
 <div class="title-bar custom-font collection-header">
 	{% if collection.handle == 'all' %}

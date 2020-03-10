@@ -1,31 +1,33 @@
 <div class="content clearfix">
 
 	<div class="title-bar {{ settings.title-bar-styling }} custom-font">
-		<h2>{{ 'customer.account.title' | t }} <br><a href="/account?view=edit" style="font-size: 14px;">Edit account</a></h2>
 		<div class="clear"></div>
 	</div>
 
 	<div class="row">
 
   <div id="customer_sidebar" class="col-lg-3">
+  
     <div id="customer_detail" class="group">
+
       <h4 class="name">{{ customer.name }}</h4>
-      <p class="email note">{{ customer.email }}</p>
-
-      <a href="{{ routes.account_logout_url }}" class="btn btn-custom envy-logout-link">{{ 'layout.customer.log_out' | t }}</a>
-
-      <div class="address note">
+      <div class="customer-details">
+      {{ customer.email }}
         {% if customer.default_address != nil %}
-          <p>{{ customer.default_address.address1 }}
+          <br />{{ customer.default_address.address1 }}
           {% if customer.default_address.address2 != "" %}
-            <br />{{ customer.default_address.address2 }}
+            {{ customer.default_address.address2 }}
           {% endif %}
           <br />{{ customer.default_address.city}}, {% if address.province_code %}{{customer.default_address.province_code}}, {% endif %}{{customer.default_address.country}}
           <br />{{ customer.default_address.zip}}
-          <br />{{ customer.default_address.phone }}</p>
+          <br />{{ customer.default_address.phone }}
         {% endif %}
-        <a id="view_address" class="btn btn-custom" href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
       </div>
+      
+      <a href="/tools/checkout/front_end/login" class="account-btn btn btn-custom">Manage Subscription</a>
+      <a href="/account?view=edit" class="account-btn btn btn-custom">Edit account</a>
+      <a href="{{ routes.account_logout_url }}" class="account-btn btn btn-custom envy-logout-link">{{ 'layout.customer.log_out' | t }}</a>
+      <a id="view_address" class="account-btn btn btn-custom" href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
 
     </div>
   </div>
@@ -51,11 +53,11 @@
       <tbody>
         {% for order in customer.orders %}
         <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
-          <td>{{ order.name | link_to: order.customer_url }}</td>
-          <td><span class="note">{{ order.created_at | date: format: 'long' }}</span></td>
-          <td><span class="status_{{ order.financial_status_label }}">{{ order.financial_status_label }}</span></td>
-          <td><span class="status_{{ order.fulfillment_status_label }}">{{ order.fulfillment_status_label }}</span></td>
-          <td><span class="total money">{{ order.total_price | money }}</span></td>
+          <td class="order_number">{{ order.name | link_to: order.customer_url }}</td>
+          <td class="date"><span class="note">{{ order.created_at | date: format: 'long' }}</span></td>
+          <td class="payment_status"><span class="status_{{ order.financial_status_label }}">{{ order.financial_status_label }}</span></td>
+          <td class="fulfillment_status"><span class="status_{{ order.fulfillment_status_label }}">{{ order.fulfillment_status_label }}</span></td>
+          <td class="total"><span class="total money">{{ order.total_price | money }}</span></td>
         </tr>
         {% endfor %}
       </tbody>
