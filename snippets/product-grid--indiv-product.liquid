@@ -43,33 +43,33 @@
     <div class="indiv-product-vendor-text">{{ liquidObject.vendor | link_to_vendor }}</div>
   {% endif %}
 
-    <a href="{{ liquidObject.url | within: collection }}">
+    <a class="product-grid-links" href="{{ liquidObject.url | within: collection }}">
 
-      <span class="indiv-product-title-text">{{ liquidObject.title }}</span>
+      <div class="indiv-product-title-text">{{ liquidObject.title }}</div>
 
-      <span class="indiv-product-subheading">{{ liquidObject.metafields.custom_fields["subheading"] }}</span>
+      <div class="indiv-product-subheading">{{ liquidObject.metafields.custom_fields["subheading"] }}</div>
 
-      <span class="money-styling">
+      <div class="money-styling">
 
         {% if liquidObject.compare_at_price_max > liquidObject.price %}
-          <span class="compare-at-price">
-            <span class="money">{{ liquidObject.compare_at_price_max | money }}</span>
-          </span>
+          <div class="compare-at-price">
+            <div class="money">{{ liquidObject.compare_at_price_max | money }}</div>
+          </div>
         {% endif %}
 
         {% if liquidObject.price_varies %}
-          <small>{{ 'products.general.from' | t }}</small> <span class="money">{{ liquidObject.price_min | money }}</span>
+          <small>{{ 'products.general.from' | t }}</small> <div class="money">{{ liquidObject.price_min | money }}</div>
         {% else %}
-          <span class="money">{{ liquidObject.price_min | money }}</span>
+          <div class="money">{{ liquidObject.price_min | money }}</div>
         {% endif %}
 
         {% assign first_variant = liquidObject.variants[0] %}
         {% include 'unit-price-measurement-grid', variant: first_variant %}
 
-      </span>
+      </div>
 
       {% if settings.show_reviews %}
-        <span class="shopify-product-reviews-badge" data-id="{{ liquidObject.id }}"></span>
+        <div class="shopify-product-reviews-badge" data-id="{{ liquidObject.id }}"></div>
       {% endif %}
 
     </a>

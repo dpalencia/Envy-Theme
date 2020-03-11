@@ -10,6 +10,7 @@
       </div>
     </div>
     <div class="button-container col-md-6 col-sm-12 col-xs-12">
+<div class="ro_widget"></div>
         <button type="submit" name="add" id="purchase" class="btn btn-success custom-font{% if section.settings.show_smart_checkout %} add-to-cart--secondary{% endif %}"{% if disabled %} disabled="disabled"{% endif %} data-cart-action="{{ section.settings.cart-action }}">
             {% if pick_an_option or current_variant.available %}
               {{ 'products.product.add_to_cart' | t }}
