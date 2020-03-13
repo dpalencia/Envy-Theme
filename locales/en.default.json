@@ -1,8 +1,8 @@
 {
   "general": {
     "404": {
-      "title": "404 Page Not Found",
-      "subtext_html": "The page you requested does not exist. Click <a href=\"\/collections\/all\">here<\/a> to continue shopping."
+      "title": "Page Not Found",
+      "subtext_html": "The page you requested does not exist. Click <a href=\"\/\">here<\/a> to continue shopping." 
     },
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",
@@ -88,7 +88,7 @@
     "general": {
       "title": "Your Cart",
       "remove": "Remove",
-      "note": "Add a note for the seller",
+      "note": "Special instructions",
       "subtotal": "Subtotal",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
@@ -97,7 +97,7 @@
       "total": "Total",
       "price": "Price",
       "quantity": "Quantity",
-      "update": "Update Cart",
+      "update": "Update Quantities",
       "checkout": "Place your order",
       "checkout_mobile": "Checkout",
       "empty": "Your basket is empty",
@@ -111,7 +111,7 @@
   "collections": {
     "general": {
       "view_all": "View all",
-      "no_matches": "Sorry, there are no products matching your search",
+      "no_matches": "",
       "link_title": "Browse our {{ title }} collection",
       "product_collections": "Product Collections",
       "items_with_count": {
@@ -210,7 +210,7 @@
       "cancelled_reason": "Reason: {{ reason }}",
       "billing_address": "Billing Address",
       "payment_status": "Payment Status",
-      "shipping_address": "Shipping Address",
+      "shipping_address": "Shipping Address (business address is recommended)",
       "fulfillment_status": "Fulfillment Status",
       "discount": "Discount",
       "shipping": "Shipping",
@@ -335,6 +335,25 @@
       "customer_account": {
         "have_an_account_label": "To create an account or log in, ",
         "sign_in_link_label": "click here."
+      },
+      "general": {
+        "continue_to_shipping_method": "CONTINUE TO SHIPPING",
+        "continue_to_payment_method": "CONTINUE TO PAYMENT",
+        "pay_now_button_label": "PAY NOW"
+      },
+      "contact": {
+        "shipping_address_title": "Shipping address (a business address is best)"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Keep me up to date on exclusive offers"
+      },
+      "shipping_errors": {
+        "shipping_method_not_available": "The items in your cart can't be shipped to this address. Contact us for more details."
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Well done – you'll set to receive exclusive offers from us"
       }
     }
   }

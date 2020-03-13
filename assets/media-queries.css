@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    /* Headings */
+    .title-bar.title-bar-lowercase.custom-font h2 {
+        line-height: 1;
+    }
+
+    /* My Account */
+    .payment_status, .fulfillment_status { 
+      display: none;
+     }
+
+    /* Top slideshow */
+    .home-top-slideshow ul li img {
+        display: none !important;
+    }
+    
+    .row-flex {
+        display: block;
+    }
+
+  }
+  
+  /* Mailchimp */
+  @media (min-width: 992px) {
+    .mc-row {
+      display: flex;
+      align-items: center;
+    }
+  }
+

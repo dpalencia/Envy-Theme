@@ -6,7 +6,6 @@
     margin-top: 25px;
 }
 
-
 h2 {
     text-transform: uppercase;
 }
@@ -20,7 +19,7 @@ h2 {
 }
 
 .title-bar h1 {
-    font-size: 50px !important;
+  font-size: 50px !important;
   padding-bottom: 25px;
 }
 
@@ -268,6 +267,17 @@ button#purchase.add-to-cart--secondary {
 
 
 /* Today's Offer */
+.product-out-of-stock {
+  color: #487338;
+  font-size: 27px;
+  font-style: normal;
+  padding: 4px 0;
+  margin: 20px 0;
+  border-bottom: 2px solid #48733E;
+  border-top: 2px solid #48733E;
+}
+
+
 
 .homepage-sections--indiv-product-slider img {
   width: 95%;
@@ -275,7 +285,6 @@ button#purchase.add-to-cart--secondary {
 
 
 /* Rich Text (Heading/Image secitons) */
-
 .rich-text .text-left .title-bar {
   text-align: left;
 }
@@ -335,7 +344,7 @@ button#purchase.add-to-cart--secondary {
   text-align: left;
   font-family: "Josefin Sans",sans-serif;
   text-transform: uppercase;
-   letter-spacing: .2px;
+  letter-spacing: .2px;
   margin-bottom: 3px;
 }
 
@@ -484,7 +493,6 @@ width: 100%;
 
 
 /* News */
-
 .blog-divider-container {
   margin-top: 20px;
 }
@@ -508,14 +516,6 @@ width: 100%;
 
 
 /* Mailchimp */
-
-@media (min-width: 992px) {
-  .mc-row {
-    display: flex;
-    align-items: center;
-  }
-}
-
 .mc-btn-container { 
   font-family: "Josefin Sans", sans-serif;
 }
@@ -577,7 +577,6 @@ width: 100%;
 
 
 /* FAQ */
-
 .s4com-helpcenter h1 {
     font-weight: bold;
 }
@@ -632,6 +631,48 @@ div#shopify-section-product-template {
 } 
 
 /* My Account */
+.title-bar.order-title-bar.text-left.title-bar-lowercase.custom-font {
+  text-align: center !important;
+
+}
+
+.title-bar.order-title-bar h2 {
+  font-size: 45px !important;
+}
+
+#order_payment .title-bar, #order_shipping .title-bar {
+  text-align: left !important;
+}
+
+#order_payment .title-bar h2, #order_shipping .title-bar h2 {
+  font-size: 30px !important;
+  line-height: 1;
+  padding: 0px;
+}
+
+.title-bar.order-title-bar {
+  text-align: center !important;
+}
+
+.title-bar.addresses-title h2 {
+  font-size: 45px !important;
+}
+
+
+.add-address h2, .edit-address h2 {
+  font-size: 30px !important;
+  line-height: 1;
+  padding: 0px 0 10px 0;
+}
+
+.title-bar.text-left {
+  text-align: left !important;
+}
+
+.order-title-bar h2 {
+  font-size: 40px !important;
+}
+
 #customer_sidebar .btn {
   width: 80%;
 }
@@ -672,14 +713,6 @@ label {
     margin: 18px 0px 0px -9px !important
 }
 
-
-
-@media (max-width: 767px) {
-  .payment_status, .fulfillment_status { 
-    display: none;
-   }
-}
-
 .btn-default {
     color: #fff !important;
     background-color: #2a4820 !important;
@@ -691,6 +724,26 @@ label {
     line-height: 20px !important;
 }
 
+.btn-danger {
+  color: #fff;
+  background-color: #2a4820;
+  border-color: #2a4820;
+  border-radius: 0px;
+  font-family: Josefin Sans, sans-serif;
+  text-transform: uppercase;
+  padding: 13px 25px 11px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #2a4820;
+  border-color: #2a4820;
+  border-radius: 0px;
+  font-family: Josefin Sans, sans-serif;
+  text-transform: uppercase;
+  padding: 13px 25px 11px;
+}
+
 .show-password-form {
     font-family: Josefin Sans, sans-serif;
     text-transform: uppercase;
@@ -698,7 +751,6 @@ label {
 
 
 /* My Account Subscriptions Management */
-
 .ro-translation-greeting_header .h3 {
   text-align: center !important;
 }
@@ -743,6 +795,18 @@ label {
     width: 100% !important;
 }
 
+
+
+#create-customer .title-bar.title-bar-lowercase.custom-font  {
+  margin: 50px 0 10px !important;
+  padding: 0 !important;
+}
+
+#create-customer .cf-form-step {
+  margin-top: 10px !important;
+}
+
+
 /* Cart */
 
 
@@ -780,3 +844,12 @@ label {
 .cart--shipping-message {
     font-style: normal;
 }
+
+/* CF Field Select */
+
+.cf-field-container select {
+  display: block !important;
+}
+
+
+

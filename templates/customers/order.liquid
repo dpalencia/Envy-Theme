@@ -1,6 +1,6 @@
 <div class="content clearfix">
 
-<div class="title-bar {{ settings.title-bar-styling }} custom-font">
+<div class="title-bar order-title-bar text-left {{ settings.title-bar-styling }} custom-font">
 	<h2 class="template-customers-order--title">{{ 'customer.order.title' | t: name: order.name }}</h2>
 	<h3 class="title-bar-sub">{{ order.created_at | date: format: 'long' }}</h3>
 	<div class="clear"></div>
@@ -31,7 +31,7 @@
     </div>
     {% if order.shipping_address %}
       <div id="order_shipping" class="col-lg-6">
-		<div class="title-bar {{ settings.title-bar-styling }} custom-font">
+		<div class="title-bar order-title-bar text-left {{ settings.title-bar-styling }} custom-font">
 			<h2>{{ 'customer.order.shipping_address' | t }}</h2>
 			<div class="clear"></div>
 		</div>

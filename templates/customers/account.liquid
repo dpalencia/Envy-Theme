@@ -1,6 +1,6 @@
 <div class="content clearfix">
 
-	<div class="title-bar {{ settings.title-bar-styling }} custom-font">
+	<div class="title-bar main-order-title {{ settings.title-bar-styling }} custom-font">
 		<div class="clear"></div>
 	</div>
 
@@ -10,10 +10,10 @@
   
     <div id="customer_detail" class="group">
 
-      <h4 class="name">{{ customer.name }}</h4>
+      
       <div class="customer-details">
-      {{ customer.email }}
         {% if customer.default_address != nil %}
+          <h4 class="name">{{ customer.default_address.first_name }} {{ customer.default_address.last_name }}</h4>
           <br />{{ customer.default_address.address1 }}
           {% if customer.default_address.address2 != "" %}
             {{ customer.default_address.address2 }}
@@ -24,7 +24,7 @@
         {% endif %}
       </div>
       
-      <a href="/tools/checkout/front_end/login" class="account-btn btn btn-custom">Manage Subscription</a>
+      <a href="/tools/checkout/front_end/login" class="account-btn btn btn-custom">Monthly Clubs</a>
       <a href="/account?view=edit" class="account-btn btn btn-custom">Edit account</a>
       <a href="{{ routes.account_logout_url }}" class="account-btn btn btn-custom envy-logout-link">{{ 'layout.customer.log_out' | t }}</a>
       <a id="view_address" class="account-btn btn btn-custom" href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
@@ -34,7 +34,7 @@
 
   <div id="customer_orders" class="col-lg-9">
 
-  <div class="title-bar {{ settings.title-bar-styling }} custom-font">
+  <div class="title-bar order-title-bar {{ settings.title-bar-styling }} custom-font">
   	<h2>{{ 'customer.orders.title' | t }}</h2>
   	<div class="clear"></div>
   </div>

@@ -466,7 +466,7 @@
                               <li{% if section.settings.search-enable == false %} class="login-no-padding"{% endif %}>
                                   <a href="{{ routes.account_url }}" class="icons--inline" title="{{ 'customer.account.title' | t }}">
                                       <i data-feather="user"></i>
-                                      {% if section.settings.label-enable %}<span class="header--supporting-text">{{customer.name}}</span>{% endif %}
+                                      {% if section.settings.label-enable %}<span class="header--supporting-text">{{ customer.default_address.first_name }} {{ customer.default_address.last_name }}</span>{% endif %}
                                   </a>
                               </li>
                           {% else %}

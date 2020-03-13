@@ -1,0 +1,13 @@
+.btn {
+    background-color: #2a4820 !important;
+    color: #fff !important;
+    background-color: #2a4820;
+    border-color: #2a4820;
+    border-radius: 0px;
+    font-family: Josefin Sans, sans-serif;
+    text-transform: uppercase;
+    padding: 13px 25px 11px;
+}
+a {
+  color: #2a4820;
+}

@@ -80,7 +80,7 @@
     "popup--enable": true,
     "popup--test-mode": false,
     "pop-up-time": "7",
-    "popup-delay": 5,
+    "popup-delay": 12,
     "desktop-popup-style": "fullscreen",
     "popup-newsletter-image": "shopify:\/\/shop_images\/glass-silhouette.jpg",
     "pop-up-text-header-text": "DON'T MISS A DEAL",

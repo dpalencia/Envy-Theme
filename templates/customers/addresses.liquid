@@ -1,6 +1,6 @@
 <div class="content clearfix">
 
-<div class="title-bar {{ settings.title-bar-styling }} custom-font">
+<div class="title-bar  addresses-title {{ settings.title-bar-styling }} custom-font">
 	<h2>{{ 'customer.addresses.title' | t }}</h2>
 	<div class="clear"></div>
 </div>
@@ -33,7 +33,7 @@
     <div id="edit_address_{{address.id}}" class="customer_address edit_address" style="display:none;">
       {% form 'customer_address', address %}
 
-		<div class="title-bar {{ settings.title-bar-styling }} custom-font">
+		<div class="title-bar edit-address text-left {{ settings.title-bar-styling }} custom-font">
 		<h2>{{ 'customer.addresses.edit_address' | t }}</h2>
 		<div class="clear"></div>
 		</div>
@@ -102,7 +102,7 @@
   <div id="add_address" class="customer_address edit_address col-md-6{% if customer.addresses.size == 0 %} col-md-offset-3{% endif %}">
     {% form 'customer_address', customer.new_address %}
 
-	<div class="title-bar {{ settings.title-bar-styling }} custom-font">
+	<div class="title-bar add-address text-left {{ settings.title-bar-styling }} custom-font">
     	<h2>{{ 'customer.addresses.add_new' | t }}</h2>
 		<div class="clear"></div>
 	</div>
