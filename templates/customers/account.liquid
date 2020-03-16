@@ -11,24 +11,24 @@
     <div id="customer_detail" class="group">
 
       
-      <div class="customer-details">
+      <div class="customer-details text-center">
         {% if customer.default_address != nil %}
           <h4 class="name">{{ customer.default_address.first_name }} {{ customer.default_address.last_name }}</h4>
-          <br />{{ customer.default_address.address1 }}
+          {{ customer.default_address.address1 }}
           {% if customer.default_address.address2 != "" %}
             {{ customer.default_address.address2 }}
           {% endif %}
-          <br />{{ customer.default_address.city}}, {% if customer.default_address.province_code %} {{customer.default_address.province_code}}, {% endif %}{{customer.default_address.country}}
+          <br />{{ customer.default_address.city }},{% if customer.default_address.province_code %} {{customer.default_address.province_code}},{% endif %} {{customer.default_address.country}}
           <br />{{ customer.default_address.zip}} 
           <br />{{ customer.default_address.phone }}
         {% endif %}
+      <div class="account-buttons">
+        <a href="/tools/checkout/front_end/login" class="account-btn btn btn-custom">Monthly Clubs</a>
+        <a href="/account?view=edit" class="account-btn btn btn-custom">Edit account</a>
+        <a href="{{ routes.account_logout_url }}" class="account-btn btn btn-custom envy-logout-link">{{ 'layout.customer.log_out' | t }}</a>
+        <a id="view_address" class="account-btn btn btn-custom" href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
       </div>
-      
-      <a href="/tools/checkout/front_end/login" class="account-btn btn btn-custom">Monthly Clubs</a>
-      <a href="/account?view=edit" class="account-btn btn btn-custom">Edit account</a>
-      <a href="{{ routes.account_logout_url }}" class="account-btn btn btn-custom envy-logout-link">{{ 'layout.customer.log_out' | t }}</a>
-      <a id="view_address" class="account-btn btn btn-custom" href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
-
+    </div>
     </div>
   </div>
 

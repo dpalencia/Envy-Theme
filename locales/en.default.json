@@ -2,7 +2,7 @@
   "general": {
     "404": {
       "title": "Page Not Found",
-      "subtext_html": "The page you requested does not exist. Click <a href=\"\/\">here<\/a> to continue shopping." 
+      "subtext_html": "The page you requested does not exist. Click <a href=\"\/\">here<\/a> to continue shopping."
     },
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",

@@ -188,6 +188,7 @@
           "1581534807916"
         ],
         "settings": {
+          "sliderclass": "home-top-slideshow",
           "slider-animation": "slide",
           "slider-width": "full-width",
           "slider-slide-time": 6,
@@ -496,6 +497,7 @@
           "1582326320232"
         ],
         "settings": {
+          "sliderclass": "",
           "slider-animation": "slide",
           "slider-width": "full-width",
           "slider-slide-time": 6,

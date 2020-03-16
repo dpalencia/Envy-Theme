@@ -1,9 +1,4 @@
 @media (max-width: 767px) {
-    /* Headings */
-    .title-bar.title-bar-lowercase.custom-font h2 {
-        line-height: 1;
-    }
-
     /* My Account */
     .payment_status, .fulfillment_status { 
       display: none;
@@ -17,14 +12,132 @@
     .row-flex {
         display: block;
     }
+    /* Home slideshow */
+    
+    .slider-caption {
+      padding: 20px;
+    }
 
+    .container.rich-text {
+      margin-bottom: 10px;
+    }
+
+
+    /* Homepage wrapper */
+    .homepage-sections-wrapper.homepage-sections-wrapper--white {
+      padding: 0px !important;
+    }
+
+    /* Home custom html centering */
+    .rte, .feature-row__text {
+      text-align: center;
+    }
+    /* Mailchimp form */
+    .col-md-6.signup-cta-text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #mce-EMAIL, #mc-embedded-subscribe {
+      font-size: 12px;
+    }
+
+    /* Featured image */
+    .feature-row__image {
+      margin: 20px 0;
+    }
+
+    /* Headings */
+    .title-bar h1 {
+      line-height: 1 !important;
+      font-size: 45px !important;
+    }
+
+    .s4com-language-selection h1.s4com-helpcenter-title {
+      font-size: 35px !important;
+      line-height: 1 !important;
+      padding-left: 0px !important;
+    }
   }
+
+@media (max-width: 1200px) {
+  /* Headings */
+    .title-bar.title-bar-lowercase.custom-font h2 {
+      line-height: 1;
+  }
+
+  .homepage-sections-wrapper--light .title-bar-lowercase h1 span, .homepage-sections-wrapper--light .title-bar-lowercase h2 span {
+    padding: 0px !important;
+  }
+    
+  .homepage-headline-text.homepage--heading-font {
+    line-height: 1;
+  }
+    
+  h2, .title-bar h2 {
+    font-size: 45px !important;
+    line-height: 1 !important;
+  }
+
+
+
+  .rich-flex { 
+    padding: 20px;
+  }
+
+    /* Home rich text */
+    .row.rich-flex {
+      flex-direction: column;
+      justify-content: center;
+    }
+      
+    .rich-flex div {
+      text-align: center !important;
+      padding: 5px;
+    }
+      
+    .rich-flex div img {
+      max-width: 100%;
+    }
+
+    .description-content {
+      text-align: center !important;
+    }
+
   
-  /* Mailchimp */
-  @media (min-width: 992px) {
+    
+  }
+
+  @media (min-width: 992px) and (max-width: 1366px) {
+   /* Mailchimp */
     .mc-row {
       display: flex;
       align-items: center;
     }
+
+    #collections-main .description-content {
+      width: 870px;
+      margin: 0 auto;
+    }
+    .col-md-6.signup-cta-text h3 {
+      font-size: 14px;
+    }
+     
   }
 
+
+  @media (min-width: 768px) and (max-width: 1366px) {
+  .home-top-slideshow .slides li {
+    background-color: #2a4820 !important;
+    color: #fff !important;
+    min-height: 60px !important;
+  }
+  
+  .home-top-slideshow .slides li img {
+    display: none !important;
+  }
+  
+  .home-top-slideshow .slider-caption--subheading p {
+    color: #fff !important;
+  }
+}

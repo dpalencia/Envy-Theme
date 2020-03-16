@@ -19,9 +19,9 @@
       </h3>
       <div class="view_address">
         <p>{{ address.first_name }} {{address.last_name }}
-        <br />{{ address.company }}
+        {{ address.company }}
         <br />{{ address.street }}
-        <br />{{ address.city }} {% if address.province_code %}, {{ address.province_code }}{% endif %}
+        <br />{{ address.city }}{% if address.province_code %}, {{ address.province_code }}{% endif %}
         <br />{{ address.country }} {{ address.zip }}
         <br />{{ address.phone }}</p>
       </div>

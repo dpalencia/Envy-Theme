@@ -1,3 +1,10 @@
+/* General paddings */
+.hero--text-over-image, .homepage-section--html-wrapper, .homepage-section--text-and-image-wrapper {
+  padding: 0 20px;
+}
+
+
+
 .footer h3 {
     text-transform: uppercase !important;
 }
@@ -138,6 +145,11 @@ button#purchase.add-to-cart--secondary {
     margin-top: 0px;
 }
 
+.hero--text-over-image {
+  padding: 0 20px;
+}
+
+
 .newsletter_title .rte {
     padding: 0px 0px 0px 0;
 }
@@ -176,8 +188,7 @@ button#purchase.add-to-cart--secondary {
 }
 
 .button-container button, .button-container div {
-  flex-basis: 180px;
-  margin-right: 20px;
+  flex-grow: 1;
 }
 
 .button-container button, .button-container div button {
@@ -211,8 +222,7 @@ button#purchase.add-to-cart--secondary {
 }
 
 .button-container div {
-  flex-basis: 180px !important;
-  max-width: 180px !important;
+  flex-grow: 1;
 }
 
 .button-container div div {
@@ -234,12 +244,14 @@ button#purchase.add-to-cart--secondary {
     background: #2a4820;
     margin-top: 20px;
     margin-bottom: 0px;
-}
+} 
 
 /* After menu topbar */
-.slider-caption--subheading.size-20.first-fade p{
+.slider-caption--subheading.size-20.first-fade p {
   margin: 0 0 5px !important;
 }
+
+
 
 
 /* Quick View */
@@ -284,6 +296,28 @@ button#purchase.add-to-cart--secondary {
 }
 
 
+.button-container button {
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.quantity-controls {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.quantity-controls button {
+  max-width: 50px;
+}
+
+
+.row-flex div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 /* Rich Text (Heading/Image secitons) */
 .rich-text .text-left .title-bar {
   text-align: left;
@@ -324,6 +358,12 @@ button#purchase.add-to-cart--secondary {
 .homepage-featured-products .hp-title {
   min-height: 160px !important;
 }
+
+
+.hp-title {
+  height: auto !important;
+}
+
 
 #shopify-section-collection-template .hp-title {
   min-height: 212px;
@@ -433,6 +473,12 @@ h4.rich-subheading {
   padding: 0px;
 }
 
+.feature-row__image {
+  padding: 20px !important;
+}
+
+
+
 /* Footer */
 
 .footer-block--wrapper {
@@ -463,10 +509,7 @@ width: 100%;
   top: 120px !important;
 }
 
-#collections-main .description-content {
-  width: 870px;
-  margin: 0 auto;
-}
+
 
 .monthly-clubs .indiv-product-subheading {
   font-size: 16px;
@@ -665,6 +708,11 @@ div#shopify-section-product-template {
   padding: 0px 0 10px 0;
 }
 
+#address_default_address_new {
+  width: 20px;
+}
+
+
 .title-bar.text-left {
   text-align: left !important;
 }
@@ -749,6 +797,9 @@ label {
     text-transform: uppercase;
 }
 
+.address_title { 
+  text-transform: uppercase;
+}
 
 /* My Account Subscriptions Management */
 .ro-translation-greeting_header .h3 {
@@ -851,5 +902,13 @@ label {
   display: block !important;
 }
 
+/* Mobile menu */
+.mobile-menu--wrapper ul li a {
+  text-transform: uppercase;
+}
 
 
+/* Account Subscriptions */
+.subscription-images-container {
+  margin-bottom: 20px;
+}
