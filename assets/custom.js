@@ -416,3 +416,16 @@ $(document).ready(load_googlemaps);
 
 })(window.wetheme.$);
 
+
+/* DS Custom JS */
+
+function quantityOverride() {
+    let quantityHead = document.getElementsByClassName("details-quantity")[0];
+    if(window.innerWidth < 768) 
+        quantityHead.innerHTML = "#";
+    else 
+        quantityHead.innerHTML = "Quantity";
+}
+window.onload = quantityOverride;
+
+

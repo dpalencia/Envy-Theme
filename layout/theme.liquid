@@ -72,11 +72,15 @@
 	{{ 'plugins.js' | asset_url | script_tag }}
 	{{ 'custom.js' | asset_url | script_tag }}
 	{{ 'sections.js' | asset_url | script_tag }}
+	{{ 'ds-js.js' | asset_url | script_tag }}
+
 
 {% include 'sca-quick-view-init' %}
  </head>
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} flexbox-wrapper{% unless settings.animations_enabled %} animations-disabled{% endunless %}">
+
+	{% render 'age-check' %}
 
 	{% if template != 'cart' %}
 		{% include 'cart-drawer' %}
@@ -131,7 +135,7 @@
     };
 	</script>
 
-{% include 'sca-quick-view-template' %} 
+{% render 'sca-quick-view-template' %} 
  </body>
 
 </html>

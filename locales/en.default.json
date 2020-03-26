@@ -333,7 +333,7 @@
         "no_rates_for_cart_or_destination_notice": "Sorry, this product is not available for online purchase in your area. Please contact us directly for shipping rates and to place an order."
       },
       "customer_account": {
-        "have_an_account_label": "To create an account or log in, ",
+        "have_an_account_label": "Create an account for faster checkout –",
         "sign_in_link_label": "click here."
       },
       "general": {
@@ -348,7 +348,7 @@
         "accept_marketing_checkbox_label": "Keep me up to date on exclusive offers"
       },
       "shipping_errors": {
-        "shipping_method_not_available": "The items in your cart can't be shipped to this address. Contact us for more details."
+        "shipping_method_not_available": "The items in your cart can't be shipped to this state\/region. Contact us at hello@prologuewine.com for more details or to arrange alternate shipping."
       }
     },
     "email_marketing": {

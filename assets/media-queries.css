@@ -1,24 +1,75 @@
 @media (max-width: 767px) {
+  
+
+  /* Top green bar */
+  .home-top-slideshow .slides li img {
+    display: none !important;
+  }
+
+  .home-top-slideshow .slider-caption--subheading p {
+    color: #000 !important;
+  }
+
+  .home-top-slideshow .slides li {
+    background-color: #fff !important;
+  }
+   /* Cart Table */
+   #order_details .product, #order_details .money, #order_details .quantity, #order_details th, #order_details td, #order_details .money-styling {
+      font-size: 10px;
+    }
+    
+    #order_details th {
+      font-size: 10px;
+    }
+    
+    #order_details th.details-sku, #order_details .sku {
+      font-size: 0px !important;
+    }
+    
+    
+    #order_details .money-styling {
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+    /* Quantity buttons */
+    .row-flex {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .quantity-controls {
+      display: flex; 
+      justify-content: center;
+    }
+
+    
+    .row-flex div div {
+      text-align: center;
+    }
+
+
     /* My Account */
-    .payment_status, .fulfillment_status { 
+    #order_details .payment_status, #order_details .fulfillment_status { 
       display: none;
      }
 
     /* Top slideshow */
-    .home-top-slideshow ul li img {
+    #order_details .home-top-slideshow ul li img {
         display: none !important;
     }
     
-    .row-flex {
+    #order_details .row-flex {
         display: block;
     }
     /* Home slideshow */
     
-    .slider-caption {
+    #order_details .slider-caption {
       padding: 20px;
     }
 
-    .container.rich-text {
+    #order_details .container.rich-text {
       margin-bottom: 10px;
     }
 
@@ -33,6 +84,7 @@
       text-align: center;
     }
     /* Mailchimp form */
+
     .col-md-6.signup-cta-text {
       text-align: center;
       margin-bottom: 10px;
@@ -58,7 +110,34 @@
       line-height: 1 !important;
       padding-left: 0px !important;
     }
+
+
+    /* Checkout */
+    .cart--shipping-message,
+    .free-shipping-message,
+    .cart-totals--wrapper.custom-font {
+      text-align: left !important
+    }
+
+    .route-widget.mobile-align-undefined.desktop-align-undefined {
+      justify-content: flex-start !important;
+    }
+
+    .route-div {
+      margin-bottom: 20px;
+    }
+
+    #checkout-buttons {
+      margin-top: 0px !important;
+    }
+
   }
+
+@media (min-width: 768px) {
+  .route-widget.mobile-align-undefined.desktop-align-undefined {
+    justify-content: right !important;
+  }
+}
 
 @media (max-width: 1200px) {
   /* Headings */
@@ -104,9 +183,10 @@
       text-align: center !important;
     }
 
-  
+
+
     
-  }
+}
 
   @media (min-width: 992px) and (max-width: 1366px) {
    /* Mailchimp */
@@ -125,19 +205,42 @@
      
   }
 
-
-  @media (min-width: 768px) and (max-width: 1366px) {
-  .home-top-slideshow .slides li {
-    background-color: #2a4820 !important;
-    color: #fff !important;
-    min-height: 60px !important;
+  @media (min-width: 769px) {
+    .home-top-slideshow .slides li {
+      background-color: #2c471e !important;
+      min-height: 60px !important;
+    }
   }
-  
-  .home-top-slideshow .slides li img {
+
+  @media (max-width: 768px) {
+    .home-top-slideshow .slides li img {
+      display: none;
+    }
+    
+    .home-top-slideshow .slides li {
+        min-height: 60px !important;
+      }
+  }
+
+  @media (min-width: 769px) and (max-width: 1366px) {
+  .home-top-slideshow .slides li {
+      min-height: 60px !important;
+  }
+  .home-top-slideshow p {
+    color: #fff !important;
+  }
+  .home-top-slideshow .slideshow-desktop-as-mobile-image.lazyautosizes.lazyloaded {
     display: none !important;
   }
-  
-  .home-top-slideshow .slider-caption--subheading p {
-    color: #fff !important;
+  .slider-caption:not(.slideshow-mobile-image-content).background {
+    background-color: transparent !important;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .mc-row { 
+    display: flex !important;
+    align-items: center;
   }
 }

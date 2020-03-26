@@ -162,6 +162,14 @@
 		<div class="mobile-side-column mobile-header-wrap--icons mobile-header-right">
 			<a href="{{ routes.cart_url }}" class="slide-menu{% if settings.cart-type == 'drawer' %} slide-menu-cart{% endif %}">
 				<i data-feather="{{ section.settings.cart-style }}"></i>
+        <span class="header--supporting-text">
+            {% case section.settings.cart-number %}
+               {% when 'quantity' %}
+                   <span class="cart-item-count-header cart-item-count-header--quantity">{{ cart.item_count }}</span>
+               {% when 'total' %}
+                   <span class="cart-item-count-header cart-item-count-header--total">{{ cart.total_price | money }}</span>
+            {% endcase %}
+          </span>
 			</a>
 		</div>
 	</div>

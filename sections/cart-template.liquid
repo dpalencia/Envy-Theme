@@ -186,6 +186,16 @@
 				<div class="cart--shipping-message">{{ taxes_shipping_checkout }}</div>
 			</div>
 		</div>
+		
+		{% if shop.metafields.custom_fields["free_shipping_message"] != blank %}
+		<div class="row">
+			<div class="col-md-12">
+				<div class="free-shipping-message">
+					{{ shop.metafields.custom_fields["free_shipping_message"] }} 
+				</div>
+			</div>
+		</div>
+		{% endif %}
 
 		<div class="row">
 
@@ -264,3 +274,21 @@
     ]
 }
 {% endschema %}
+
+
+<style>
+/* Route App */
+.route-modal-content .icon-box1 .route-rm-text1 {
+font-family: "Titillium Web", "sans-serif" !important;
+ color: #69727b !important;
+}
+.route-modal-content .icon-box2 .route-rm-text2 {
+font-family: "Titillium Web", "sans-serif" !important;
+ color: #69727b !important;
+}
+.route-modal-content .icon-box3 .route-rm-text3 {
+font-family: "Titillium Web", "sans-serif"  !important;
+ color: #69727b !important;
+}
+  
+</style>

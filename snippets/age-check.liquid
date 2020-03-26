@@ -1,0 +1,58 @@
+{% assign age = 21 %}
+
+{% capture adult_header %}
+ARE YOU {{age}} OR OLDER?
+{% endcapture %}
+
+{% capture adult_text %}
+You must verify that you are {{age}} years of age or older to enter this site.
+{% endcapture %}
+
+<div id="prompt-background">
+  <div id="age-check-prompt" class="modal-prompt">
+    <h3>
+      {{ adult_header }}
+    </h3>
+    <p>
+      {{ adult_text }}
+    </p>
+    <div class="row button-container modal-age-btn-row">
+        <div class="age-btn-container">
+            <button id="submit_birthdate" class="button-enter btn styled-submit" onclick="ageCheck()" style="display:inline-block">Yes</button>
+        </div> 
+        <div class="age-btn-container">
+            <a href="http://google.com/" id="button-exit" name="button-exit">
+                <button class="btn">No</button>
+            </a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+ function ageCheck() {
+     let date = new Date();
+     let days = 30; // # of days after which the cookie wil expire
+     date.setTime(date.getTime()+(days*24*60*60*1000));
+     var expires = "; expires="+date.toGMTString();
+     document.cookie = 'isAnAdult=true;'+expires+"; path=/";
+     location.reload();
+  };
+
+  function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  };
+
+  var isAnAdult = readCookie('isAnAdult');
+  if (isAnAdult) {
+    document.write("<style> #prompt-background { display: none; }</style>");
+  };
+
+</script>

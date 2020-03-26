@@ -17,6 +17,10 @@ h2 {
     text-transform: uppercase;
 }
 
+h3, .signup-cta-text h3, .footer-block--wrapper h3 {
+  text-transform: uppercase !important;
+}
+
 .title-bar {
     margin-top: 35px;
 }
@@ -196,7 +200,7 @@ button#purchase.add-to-cart--secondary {
   margin-top: 0px !important;
   line-height: 1 !important;
   border: 0px solid transparent !important;
-  background-color: #487338 !important;
+  background-color: #2a4820 !important;
   color: #fff !important;
 }
 
@@ -246,12 +250,25 @@ button#purchase.add-to-cart--secondary {
     margin-bottom: 0px;
 } 
 
+/* Top Slideshow Side Padding */
+.slides p {
+  padding: 0 20px;
+}
+
 /* After menu topbar */
 .slider-caption--subheading.size-20.first-fade p {
   margin: 0 0 5px !important;
 }
 
-
+/* Cart */
+.mobile-header-right .slide-menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.mobile-header-right .slide-menu svg {
+  margin-right: 10px;
+}
 
 
 /* Quick View */
@@ -259,6 +276,26 @@ button#purchase.add-to-cart--secondary {
   padding: 16px 16px 14px 16px !important;
   border-radius: 0;
 }
+
+.sca-qv-product-options label.active {
+  font-size: 10px;
+}
+
+.sca-qv-optionrow {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sca-qv-optionrow label {
+  margin: unset;
+}
+
+.sca-qv-optionrow #sca-qv-quantity {
+  margin: 0px !important;
+
+}
+
 
 .sca-qv-button {
   border: unset;
@@ -378,7 +415,10 @@ button#purchase.add-to-cart--secondary {
 .indiv-product-title-text {
   display: block;
   text-align: left;
+  flex-grow: 1;
+  flex-basis: 53px;
 }
+
 
 .indiv-product, .money-styling {
   text-align: left;
@@ -679,6 +719,11 @@ div#shopify-section-product-template {
 
 }
 
+.activate-account .btn {
+  width: 100%;
+}
+
+
 .title-bar.order-title-bar h2 {
   font-size: 45px !important;
 }
@@ -896,6 +941,13 @@ label {
     font-style: normal;
 }
 
+.free-shipping-message {
+  text-align: right;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+
+
 /* CF Field Select */
 
 .cf-field-container select {
@@ -912,3 +964,43 @@ label {
 .subscription-images-container {
   margin-bottom: 20px;
 }
+
+
+
+/* Age Check */
+
+.age-btn-container {
+  margin: 10px;
+}
+
+.modal-prompt {
+  text-align: center;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  max-width: 400px;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 35px 30px 35px;
+  position: relative;
+  top: 25%;
+  z-index: 1000000;
+}
+
+.modal-prompt p, .modal-prompt h1 {
+  color: #555555;
+}
+
+#prompt-background {
+  background: #ffffffb3;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+}
+  
+.modal-prompt select { float: left; margin-right: 10px; }

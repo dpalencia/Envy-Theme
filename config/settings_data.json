@@ -66,9 +66,9 @@
     "hover-effect": "zoom",
     "match-height": false,
     "show_reviews": false,
-    "sm_facebook_link": "#",
-    "sm_twitter_link": "#",
-    "sm_instagram_link": "#",
+    "sm_facebook_link": "",
+    "sm_twitter_link": "",
+    "sm_instagram_link": "",
     "sm_youtube_link": "",
     "sm_vimeo_link": "",
     "sm_flickr_link": "",
@@ -80,11 +80,11 @@
     "popup--enable": true,
     "popup--test-mode": false,
     "pop-up-time": "7",
-    "popup-delay": 12,
+    "popup-delay": 10,
     "desktop-popup-style": "fullscreen",
     "popup-newsletter-image": "shopify:\/\/shop_images\/glass-silhouette.jpg",
     "pop-up-text-header-text": "DON'T MISS A DEAL",
-    "pop-up-text-description-text": "<p>Sign up for free to receive daily&nbsp;offers, exclusive wine tasting&nbsp;invites, and more.<\/p>",
+    "pop-up-text-description-text": "<p>Sign up to receive free daily&nbsp;offers, exclusive wine tasting&nbsp;invites, and more.<\/p>",
     "popup--show-social-icons": false,
     "popup--show-newsletter": true,
     "show_multiple_currencies": false,
@@ -115,11 +115,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "enable": false,
-          "message_text": "Single Static Top Bar Announcement",
-          "message_link": "#",
+          "enable": true,
+          "message_text": "We are open and delivering nationwide!",
+          "message_link": "",
           "notification-bar--background-color": "#f8f8f8",
-          "notification-bar--text-color": "#487338"
+          "notification-bar--text-color": "#2a4820"
         }
       },
       "header": {
@@ -154,7 +154,7 @@
               "image": "shopify:\/\/shop_images\/green-top-bar.jpg",
               "mobile_image": "",
               "title": "",
-              "text": "<p>EXCLUSIVE DEALS ON NATURAL &amp; ORGANIC WINE,&nbsp;OFFERED DAILY<\/p>",
+              "text": "<p>THE FINEST NATURAL &amp; ORGANIC WINE,&nbsp;OFFERED DAILY<\/p>",
               "button_text": "",
               "link": "",
               "caption-background": "rgba(0,0,0,0)",
@@ -203,6 +203,7 @@
       },
       "collection": {
         "type": "collection",
+        "disabled": true,
         "settings": {
           "colors": "white",
           "title": "",
@@ -286,7 +287,7 @@
             "type": "text",
             "settings": {
               "title": "Contact",
-              "richtext": "<p><a href=\"mailto:hello@prologuewine.com\" title=\"mailto:hello@prologuewine.com\">hello@prologuewine.com<\/a><\/p>\n<p><a href=\"tel:+14159447272\" title=\"tel:+14159447272\">1-415-944-7273<\/a><\/p>\n<p>M-F 9-5PM (PST)<\/p>"
+              "richtext": "<p><a class=\"contact-email\" href=\"mailto:hello@prologuewine.com\" title=\"mailto:hello@prologuewine.com\">hello@prologuewine.com<\/a><\/p>\n<p><a href=\"tel:+14159447272\" title=\"tel:+14159447272\">1-415-944-7273<\/a><\/p>\n<p>M-F 9-5PM (PST)<\/p>"
             }
           }
         },
@@ -315,7 +316,7 @@
         "settings": {
           "colors": "white",
           "title": "",
-          "featured_product": "renzo-seghesio-barolo-ginestra-2010",
+          "featured_product": "tessier-zabala-vineyard-riesling-2017",
           "image-placement": "left",
           "cart-action": "added",
           "product_variant_style": "dropdowns",
@@ -412,8 +413,8 @@
           "align": "center",
           "colors": "white",
           "width": "large",
-          "title": "Today's Offer",
-          "text": "<p>Perfectly-aged Barolo. A Prologue Wine Co. Exclusive.<\/p>",
+          "title": "TODAY'S OFFER",
+          "text": "<p>An electric natural Riesling &ndash; best price in the U.S.<\/p>",
           "button_label": "",
           "button_link": ""
         }
@@ -427,7 +428,7 @@
               "image": "shopify:\/\/shop_images\/poolside-whites-site_aeae6d1a-a5b3-4350-b29c-ede7c29b977f.jpg",
               "mobile_image": "",
               "title": "Poolside Whites",
-              "text": "<p>A six bottle collection of brisk, mineral-driven white wines perfect for the porch or the pool.<\/p>",
+              "text": "<p><a href=\"\/collections\/monthly-clubs\" title=\"Monthly Clubs\">A six bottle collection of brisk, mineral-driven white wines perfect for the porch or the pool.<\/a><\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -444,7 +445,7 @@
               "image": "shopify:\/\/shop_images\/robust-reds-site.jpg",
               "mobile_image": "",
               "title": "Juicy, Sumptuous Reds",
-              "text": "<p>Six robust, balanced red wines made for both the cellar and immediate pleasure.&nbsp;<\/p>",
+              "text": "<p><a href=\"\/collections\/monthly-clubs\" title=\"Monthly Clubs\">Six robust, balanced red wines made for the cellar or immediate pleasure.&nbsp;<\/a><\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -461,7 +462,7 @@
               "image": "shopify:\/\/shop_images\/the-dinner-party-site.jpg",
               "mobile_image": "",
               "title": "The Dinner Party",
-              "text": "<p>Our most popular club. One sparkling, two whites, and three reds. Crafted to be paired with food and friends.<\/p>",
+              "text": "<p><a href=\"\/collections\/monthly-clubs\" title=\"Monthly Clubs\">Our most popular club. One sparkling, two whites, and three reds. Crafted to be paired with food and friends.<\/a><\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -478,7 +479,7 @@
               "image": "shopify:\/\/shop_images\/the-bubble-club-site.jpg",
               "mobile_image": "",
               "title": "The Bubble Club",
-              "text": "<p>Six natural, mouth-watering sparkling wines from the Old World and New.<\/p>",
+              "text": "<p><a href=\"\/collections\/monthly-clubs\" title=\"Monthly Clubs\">Six natural, mouth-watering sparkling wines from the Old World and New.<\/a><\/p>",
               "button_text": "Explore Monthly Clubs",
               "link": "shopify:\/\/collections\/monthly-clubs",
               "caption-background": "rgba(0,0,0,0)",
@@ -500,7 +501,7 @@
           "sliderclass": "",
           "slider-animation": "slide",
           "slider-width": "full-width",
-          "slider-slide-time": 6,
+          "slider-slide-time": 4,
           "caption-heading-size": 50,
           "caption-subheading-size": 24,
           "show-slide-full-screen": false,
@@ -555,12 +556,13 @@
       },
       "1582757967187": {
         "type": "rich-text",
+        "disabled": true,
         "settings": {
-          "subheading": "Catch these before they're gone.",
+          "subheading": "Special selections of what we're loving now",
           "align": "left",
           "colors": "white",
           "width": "medium",
-          "title": "Recent Offers",
+          "title": "More Offers",
           "text": "",
           "button_label": "",
           "button_link": ""
@@ -569,7 +571,7 @@
       "1582758361284": {
         "type": "rich-text",
         "settings": {
-          "subheading": "Six curated bottles a month. <br> Cancel anytime. Free shipping, always.",
+          "subheading": "Six curated bottles a month. <br> Buy once or subscribe. Free shipping, always.",
           "align": "right",
           "colors": "white",
           "width": "medium",
@@ -658,10 +660,24 @@
       "page-builder": {
         "type": "page-builder",
         "blocks": {
+          "1584498238439": {
+            "type": "image-with-text",
+            "settings": {
+              "colors": "white",
+              "image-width": "medium",
+              "image": "shopify:\/\/shop_images\/ZP-headshot.jpg",
+              "layout": "left",
+              "title": "BETTER WINE, NATURALLY",
+              "text_block": "<p>Founded by Zach Pace, a professional sommelier and wine educator, Prologue Wine Co. offers curated, daily selections of natural and organic wine, plus monthly clubs, special events, and more...<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "newTab": false
+            }
+          },
           "1583274096819": {
             "type": "custom-html",
             "settings": {
-              "html": "<span style=\"font-size: 18px;\">Prologue Wine Company is a direct-to-consumer online wine retailer, offering daily selections of organic and natural wines. We taste thousands of wines a year to bring you just one single wine a day.<\/span><br><br>\n<span style=\"font-size: 18px;\">Founded by Zach Pace, a classically trained sommelier and wine educator, he has worked in every aspect of the industry and travelled the world over in pursuit of the finest small-batch wines. His years in hospitality, running beverage programs for Michelin-rated restaurants, small cafés, and everything in between has granted him (and you!) access to exclusive organic and natural wines from the New World and Europe.\n<\/span><br><br>\n<span style=\"font-size: 18px;\">\nAt Prologue Wine Co. we believe in drinking better wine. Better for you and better for the planet. One of the most oft-asked questions we receive is, \"How do I find <a href=\"https:\/\/prologuewine.com\/apps\/faq#!hc-what-is-natural-wine\">natural wines<\/a> that are made responsibly?\"<\/span>"
+              "html": "<br><span style=\"font-size: 18px;\">A classically trained sommelier and educator by trade, Zach Pace has worked in every aspect of the industry and travelled the world over in pursuit of the finest artisanal wines.  His years in hospitality and running beverage programs for Michelin-rated restaurants has given him a keen sense of value, whether that's a $20 or $2,000 bottle. He brings that same discerning taste to Prologue, sourcing from the same networks he built during his years in hospitality.  He has numerous accreditations to his name, including the prestigious Diploma in Wine &amp; Spirits from the London-based WSET, is a French Wine Scholar Instructor, and is a Certified Wine Educator with the Society of Wine of Educators.\n<\/span><br><br>\n<span style=\"font-size: 18px;\">\nAt Prologue Wine Co. we believe in drinking better wine. Better for you and better for the planet. One of the most oft-asked questions we receive is, \"How do I find <a href=\"https:\/\/prologuewine.com\/apps\/faq#!hc-what-is-natural-wine\">natural wines<\/a> that are made responsibly?\"<\/span>"
             }
           },
           "1583274223608": {
@@ -678,7 +694,7 @@
               "image": "shopify:\/\/shop_images\/about-2_48f08493-64d7-46b9-9746-1bcd44fd08a1.png",
               "layout": "right",
               "title": "",
-              "text_block": "<p>Wine is one of the last food products that lacks in transparency.&nbsp; How is one to know whether the liquid we put into our bodies was grown with GMOs, glyphosate, pesticides, or enhanced with industrial food dyes, caramel color, or other unnatural products?<\/p>\n<p>&nbsp;<\/p>\n<p>Buy from those you trust. Prologue Wine Co. specializes in organic and all natural wines, free from any chemical agents or additives, made lovingly by family winemakers, not mass-produced in a lab or an industrial farm.<\/p>",
+              "text_block": "<p>We taste thousands of wines a year to bring you the best.&nbsp; Wine is one of the last food products that lacks in transparency&ndash;&ndash; how is one to know whether the liquid we put into our bodies was grown with GMOs, glyphosate, or pesticides &ndash; or enhanced with industrial food dyes, caramel color, and other unnatural products?<\/p>\n<p>&nbsp;<\/p>\n<p>Buy from those you trust. Prologue Wine Co. specializes in organic and all natural wines, free from any chemical agents or additives, made lovingly by family winemakers, not mass-produced in a lab or an industrial farm.<\/p>",
               "button_label": "",
               "button_link": "",
               "newTab": false
@@ -687,11 +703,12 @@
           "1583274118871": {
             "type": "custom-html",
             "settings": {
-              "html": "<br><span style=\"font-size: 18px;\">In addition to daily wine offers, we collaborate with numerous <a href=\"https:\/\/prologuewine.com\/pages\/partners\">talented industry professionals<\/a> throughout the country to deliver content, curate special offers, and contribute to an ongoing conversation about hospitality, wine, and food issues in our community.\n<br><br>\nIn collaboration with Morchella Wild Foods and our partners, we will be offering special curated products, including the Mixology Series, a collection of take-home infusion kits for the home bar enthusiast. Sign up for our email list to stay informed of new releases!<\/span><br><br>"
+              "html": "<br><span style=\"font-size: 18px;\">In addition to daily wine offers, we collaborate with numerous <a href=\"https:\/\/prologuewine.com\/pages\/partners\">talented industry professionals<\/a> throughout the country to deliver content, curate special offers, and contribute to an ongoing conversation about hospitality, wine, and food issues in our community.\n<br><br>\nIn partnership with Morchella Wild Foods, we will be offering special curated products, including the Mixology Series, a collection of take-home infusion kits for the home bar enthusiast. Sign up for our email list to stay informed of new releases!<\/span><br><br>"
             }
           }
         },
         "block_order": [
+          "1584498238439",
           "1583274096819",
           "1583274223608",
           "1583274232592",
